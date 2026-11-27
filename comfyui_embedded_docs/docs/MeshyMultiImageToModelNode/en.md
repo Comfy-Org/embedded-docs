@@ -52,11 +52,11 @@ This node uses the Meshy API to generate a 3D model from multiple input images. 
 | Output Name | Description | Data Type |
 | --- | --- | --- |
 | `model_file` | The filename of the generated GLB model. This output is provided for backward compatibility only. | STRING |
-| `meshy_task_id` | The unique identifier for the Meshy API task. | MESHY_TASK_ID |
+| `meshy_task_id` | The unique identifier for the Meshy API task. | MESHY_TASK_ID, STRING |
 | `GLB` | The generated 3D model in GLB format. | FILE3DGLB |
 | `FBX` | The generated 3D model in FBX format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`
+**Source fingerprint (SHA-256):** `656386a417ce082160a25acf6ddfe3a52a2c04b295f07d8749e8d420eaf404c6`

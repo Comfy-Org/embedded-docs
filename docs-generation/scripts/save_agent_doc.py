@@ -88,8 +88,10 @@ VALID_TYPES = {
     "AUTOGROW",
     # Vector output of the Ideogram Vector nodes (IO.SVG.Output).
     "SVG",
-    # Task handle emitted by the Meshy nodes (IO.Custom("MESHY_TASK_ID")).
+    # Task handle emitted by the Meshy nodes (IO.Custom("MESHY_TASK_ID")) and the
+    # rigged handle those nodes pass on (IO.Custom("MESHY_RIGGED_TASK_ID")).
     "MESHY_TASK_ID",
+    "MESHY_RIGGED_TASK_ID",
     # Camera info handle (IO.Load3DCamera.Input, io_type LOAD3D_CAMERA),
     # e.g. the optional `camera_info` of MiniMax H3 Max Camera Control.
     "LOAD3D_CAMERA",
@@ -156,7 +158,10 @@ def validate(body: str, node_name: str) -> list[str]:
             name, _desc, dtype, required = cells[0], cells[1], cells[2], cells[3]
             if not name.startswith("`") or not name.endswith("`"):
                 problems.append(f"input name not backticked: {name!r}")
-            if dtype.strip() not in VALID_TYPES:
+            # A port may accept several schema types (IO.Custom("A,STRING")), which the
+            # docs render as a comma-separated cell. Every token must be a schema name.
+            bad_types = [t.strip() for t in dtype.split(",") if t.strip() not in VALID_TYPES]
+            if bad_types:
                 problems.append(f"input {name} has non-schema data type: {dtype!r}")
             if required not in ("Yes", "No"):
                 problems.append(f"input {name} Required must be Yes/No, got {required!r}")

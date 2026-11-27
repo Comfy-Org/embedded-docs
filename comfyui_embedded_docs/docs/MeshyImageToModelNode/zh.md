@@ -16,7 +16,7 @@ Mesh：Image to Model 节点使用 Meshy API，从单个输入图像生成 3D �
 | `texture_prompt` | 提供文本提示以指导纹理生成过程。最多 600 个字符。不能与 `texture_image` 同时使用。此输入仅在 `should_texture` 设置为 `"true"` 时可用。默认值：空字符串。 | STRING | 否* | - |
 | `texture_image` | `texture_image` 和 `texture_prompt` 同时只能使用其中一个。此输入仅在 `should_texture` 设置为 `"true"` 时可用。 | IMAGE | 否* | - |
 | `texture_resolution` | 基础颜色纹理分辨率。更高的分辨率可以捕捉更多表面细节。此输入仅在 `should_texture` 设置为 `"true"` 时可用。 | COMBO | 否* | `"2k"`<br>`"4k"`<br>`"8k"` |
-| `pose_mode` | 指定所生成模型的姿态模式。这是一个高级参数。 | COMBO | 是 | `""` (empty)<br>`"A-pose"`<br>`"T-pose"` |
+| `pose_mode` | 指定所生成模型的姿态模式。这是一个高级参数。 | COMBO | 是 | `""` (空)<br>`"A-pose"`<br>`"T-pose"` |
 | `seed` | `seed` 用于控制节点是否应重新运行；结果不受 seed 影响，始终是非确定性的。默认值：0。 | INT | 是 | 0 - 2147483647 |
 | `超精细模式` | 运行额外的细化过程，以获得具有更精细表面细节的高保真几何体。默认值：`False`。 | BOOLEAN | 是 | - |
 | `ultra_resolution` | 超精细处理的分辨率：`"2k"` 以 2048³ 运行，`"4k"` 以 4096³ 运行，以获得最精细的表面细节。`"4k"` 需要 `"meshy-7.1"` 或 `"latest"` 模型。仅在启用 `ultra_mode` 时使用（默认：`"2k"`）。 | COMBO | 否 | `"2k"`<br>`"4k"` |
@@ -33,11 +33,11 @@ Mesh：Image to Model 节点使用 Meshy API，从单个输入图像生成 3D �
 | 输出名称 | 描述 | 数据类型 |
 | --- | --- | --- |
 | `模型文件` | 生成的 GLB 模型的文件名。仅为向后兼容而保留。 | STRING |
-| `meshy_task_id` | Meshy API 任务的唯一标识符，可用于参考或故障排查。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API 任务的唯一标识符，可用于参考或故障排查。 | MESHY_TASK_ID, STRING |
 | `GLB` | 以 GLB 文件格式生成的 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 文件格式生成的 3D 模型。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `38528b48c3f792a459008a52f65fae248ef1dadafb37fe4dc6b697d25bc89f4f`
+**Source fingerprint (SHA-256):** `084118fd44d003e35b9ef531654be8ffbbd4845126d93101a07a7bcacfa8738e`

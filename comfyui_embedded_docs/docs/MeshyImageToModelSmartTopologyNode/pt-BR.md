@@ -29,11 +29,11 @@ Este nó gera uma malha triangular pronta para jogos a partir de uma imagem de r
 
 | Nome da Saída | Descrição | Tipo de Dados |
 |-------------|-------------|-----------|
-| `meshy_task_id` | O identificador exclusivo da tarefa da API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | O identificador exclusivo da tarefa da API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | O modelo 3D gerado no formato GLB. | FILE3DGLB |
 | `FBX` | O modelo 3D gerado no formato FBX. | FILE3DFBX |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

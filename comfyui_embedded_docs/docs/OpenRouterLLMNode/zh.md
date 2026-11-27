@@ -116,14 +116,6 @@ OpenRouter LLM 节点将文本提示词发送给通过 OpenRouter 服务提供�
 
 这些模型最多支持 10 张参考图片（参见“参考输入”）。
 
-### Moonshot Kimi K2 Thinking 输入
-
-| 参数 | 描述 | 数据类型 | 必填 | 范围 |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推理强度。设为 'off' 时完全禁用推理。（默认："off"） | COMBO | 否 | "off"<br>"low"<br>"medium"<br>"high" |
-
-纯文本模型——无参考图片或视频。
-
 ### Perplexity Sonar Pro 输入
 
 | 参数 | 描述 | 数据类型 | 必填 | 范围 |
@@ -152,7 +144,7 @@ OpenRouter LLM 节点将文本提示词发送给通过 OpenRouter 服务提供�
 
 **说明：**
 
-- **可用模型：** 可用的模型选项会动态生成，包含具有不同能力的模型。完整列表（共 36 个模型）如下：
+- **可用模型：** 可用的模型选项会动态生成，包含具有不同能力的模型。完整列表（共 35 个模型）如下：
   - Anthropic: `anthropic/claude-opus-5`、`anthropic/claude-opus-4.8`、`anthropic/claude-opus-4.7`、`anthropic/claude-fable-5`、`anthropic/claude-sonnet-5`、`anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`、`openai/gpt-5.6-sol`、`openai/gpt-5.6-terra-pro`、`openai/gpt-5.6-terra`、`openai/gpt-5.6-luna-pro`、`openai/gpt-5.6-luna`、`openai/gpt-5.5-pro`、`openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -162,7 +154,7 @@ OpenRouter LLM 节点将文本提示词发送给通过 OpenRouter 服务提供�
   - Qwen: `qwen/qwen3.6-plus`、`qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`、`mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`、`z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`、`moonshotai/kimi-k2.6`、`moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`、`moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`、`perplexity/sonar-reasoning-pro`、`perplexity/sonar-deep-research`
 
 - **图片和视频限制：** 参考图片和视频的最大数量取决于所选模型。如果提供的图片或视频总数超过模型限制，节点会报错。不支持图片或视频的模型不会显示相应的参考输入槽位。
@@ -183,4 +175,4 @@ OpenRouter LLM 节点将文本提示词发送给通过 OpenRouter 服务提供�
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

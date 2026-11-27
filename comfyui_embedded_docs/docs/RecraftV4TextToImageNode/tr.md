@@ -8,7 +8,7 @@ Recraft V4 ve V4.1 modellerini kullanarak metin istemlerinden görüntüler üre
 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
-| `model` | Üretim için kullanılacak model. recraftv4_styles modelleri stil tutarlı üretim için tasarlanmıştır ve her zaman bir style_id veya style_references gerektirir. `recraftv4_1_flash` en hızlı ve en ucuz modeldir ve hiçbir stili desteklemez. | DYNAMIC_COMBO | Evet | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `model` | Üretim için kullanılacak model. recraftv4_styles modelleri stil tutarlı üretim için tasarlanmıştır ve her zaman bir style_id veya style_references gerektirir. `recraftv4_1_flash` Recraft V4.1 Flash V2'yi çalıştırır; en hızlı ve en ucuz modeldir ve hiçbir stili desteklemez. | DYNAMIC_COMBO | Evet | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Görüntü üretimi için istem. En fazla 10.000 karakter. | STRING | Evet | 1 ile 10000 karakter |
 | `negative_prompt` | Bu girdi yok sayılır: negatif istem, Recraft V4 ve V4.1 modelleri tarafından desteklenmez. | STRING | Evet | N/A |
 | `n` | Üretilecek görüntü sayısı (varsayılan: 1). | INT | Evet | 1 ile 6 |
@@ -51,4 +51,4 @@ Bu modeller aynı `size` parametresini paylaşır.
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

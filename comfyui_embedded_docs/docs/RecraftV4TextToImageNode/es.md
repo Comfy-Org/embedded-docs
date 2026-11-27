@@ -8,7 +8,7 @@ Genera imágenes a partir de prompts de texto usando los modelos Recraft V4 y V4
 
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | El modelo que se usará para la generación. Los modelos recraftv4_styles están diseñados para una generación consistente en estilo y siempre requieren un style_id o style_references. `recraftv4_1_flash` es el modelo más rápido y económico y no admite estilos en absoluto. | DYNAMIC_COMBO | Sí | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `modelo` | El modelo que se usará para la generación. Los modelos recraftv4_styles están diseñados para una generación consistente en estilo y siempre requieren un style_id o style_references. `recraftv4_1_flash` ejecuta Recraft V4.1 Flash V2, el modelo más rápido y económico, y no admite estilos en absoluto. | DYNAMIC_COMBO | Sí | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt para la generación de la imagen. Máximo 10 000 caracteres. | STRING | Sí | 1 a 10000 caracteres |
 | `prompt_negativo` | Esta entrada se ignora: el prompt negativo no es compatible con los modelos Recraft V4 y V4.1. | STRING | Sí | N/A |
 | `n` | El número de imágenes a generar (predeterminado: 1). | INT | Sí | 1 a 6 |
@@ -51,4 +51,4 @@ Estos modelos comparten el mismo parámetro `size`.
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

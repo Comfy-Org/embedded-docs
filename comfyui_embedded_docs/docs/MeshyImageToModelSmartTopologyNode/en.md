@@ -29,11 +29,11 @@ This node generates a game-ready triangle mesh from a reference image at a targe
 
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
-| `meshy_task_id` | The unique identifier of the Meshy API task. | MESHY_TASK_ID |
+| `meshy_task_id` | The unique identifier of the Meshy API task. | MESHY_TASK_ID, STRING |
 | `GLB` | The generated 3D model in GLB format. | FILE3DGLB |
 | `FBX` | The generated 3D model in FBX format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

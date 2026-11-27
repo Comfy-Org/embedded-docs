@@ -7,7 +7,7 @@ Dieser Node texturiert ein zuvor erstelltes 3D-Modell anhand von 1 bis 4 Referen
 | Parameter | Beschreibung | Datentyp | Erforderlich | Bereich |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Das für den Texturierungsauftrag verwendete KI-Modell. Derzeit ist nur "meshy-7" verfügbar. | COMBO | Ja | `"meshy-7"` |
-| `meshy_task_id` | Die Task-ID des zuvor erstellten 3D-Modells, das texturiert werden soll. | MESHY_TASK_ID | Ja | — |
+| `meshy_task_id` | Die Task-ID des zuvor erstellten 3D-Modells, das texturiert werden soll. | MESHY_TASK_ID, STRING | Ja | — |
 | `multiview_images` | Referenzansichten desselben Objekts. Das erste Bild ist die primäre (vordere) Ansicht; die Reihenfolge der übrigen Ansichten spielt keine Rolle. Erweiterbarer Slot: Verbinden Sie 1 bis 4 Bilder (`image_1` bis `image_4`). | IMAGE | Ja | 1 bis 4 Bilder |
 | `enable_original_uv` | Die ursprünglichen UV-Koordinaten des Modells verwenden, anstatt neue UVs zu erzeugen. Wenn aktiviert, bewahrt Meshy vorhandene Texturen des hochgeladenen Modells. Wenn das Modell keine ursprünglichen UV-Koordinaten besitzt, ist die Qualität der Ausgabe möglicherweise nicht so gut. (Standard: True; erweiterte Option) | BOOLEAN | Nein | True / False |
 | `pbr` | Aktiviert die Generierung von PBR-Texturen (physikalisch basiertes Rendering). (Standard: False; erweiterte Option) | BOOLEAN | Nein | True / False |
@@ -20,11 +20,11 @@ Dieser Node texturiert ein zuvor erstelltes 3D-Modell anhand von 1 bis 4 Referen
 | Ausgabename | Beschreibung | Datentyp |
 |-------------|-------------|-----------|
 | `model_file` | Modelldateiname. Diese Ausgabe wird nur aus Gründen der Abwärtskompatibilität beibehalten. | STRING |
-| `meshy_task_id` | Task-ID des Texturierungsauftrags. | MESHY_TASK_ID |
+| `meshy_task_id` | Task-ID des Texturierungsauftrags. | MESHY_TASK_ID, STRING |
 | `GLB` | Das texturierte 3D-Modell, heruntergeladen im GLB-Format. | FILE3DGLB |
 | `FBX` | Das texturierte 3D-Modell, heruntergeladen im FBX-Format. | FILE3DFBX |
 
 > Diese Dokumentation wurde von KI generiert. Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, tragen Sie gerne dazu bei! [Auf GitHub bearbeiten](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/de.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

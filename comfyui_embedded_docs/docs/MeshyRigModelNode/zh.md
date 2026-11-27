@@ -6,7 +6,7 @@ Meshy: Rig Model 节点从之前的 Meshy 任务中获取 3D 模型，并自动�
 
 | 参数 | 描述 | 数据类型 | 必需 | 范围 |
 |-----------|-------------|-----------|----------|-------|
-| `meshy_task_id` | 来自先前 Meshy 操作（例如，文本到 3D 或图像到 3D）的唯一任务 ID，该操作生成了要绑定的模型。 | MESHY_TASK_ID | 是 | N/A |
+| `meshy_task_id` | 来自先前 Meshy 操作（例如，文本到 3D 或图像到 3D）的唯一任务 ID，该操作生成了要绑定的模型。 | MESHY_TASK_ID, STRING | 是 | N/A |
 | `height_meters` | 角色模型的近似高度（以米为单位）。这有助于缩放和绑定准确性（默认值：1.7）。 | FLOAT | 是 | 0.1 到 15.0 |
 | `texture_image` | 模型的 UV 展开基础颜色纹理图像。 | IMAGE | 否 | N/A |
 
@@ -17,11 +17,11 @@ Meshy: Rig Model 节点从之前的 Meshy 任务中获取 3D 模型，并自动�
 | 输出名称 | 描述 | 数据类型 |
 |-------------|-------------|-----------|
 | `model_file` | 仅为向后兼容而保留的旧版输出，包含 GLB 模型的文件名。 | STRING |
-| `rig_task_id` | 此绑定操作的唯一任务 ID，可用于在后续 Meshy 节点中引用结果。 | MESHY_RIGGED_TASK_ID |
+| `rig_task_id` | 此绑定操作的唯一任务 ID，可用于在后续 Meshy 节点中引用结果。 | MESHY_RIGGED_TASK_ID, STRING |
 | `GLB` | 以 GLB 文件格式保存的绑定后的 3D 角色模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 文件格式保存的绑定后的 3D 角色模型。 | FILE3DFBX |
 
 > 本文档由 AI 生成。如果您发现任何错误或有改进建议，欢迎贡献！ [在 GitHub 上编辑](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRigModelNode/zh.md)
 
 ---
-**Source fingerprint (SHA-256):** `6ae79359fa54f36dd2491a952fe54fa56866038758e8cd475a2d2f8e9e47e3b3`
+**Source fingerprint (SHA-256):** `6f1c9cdf1f27511b66fb4a26259657eb41b331b8e7e1d33e5450d275dd7cacba`

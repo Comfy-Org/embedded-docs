@@ -21,11 +21,11 @@
 
 | نام خروجی | توضیحات | نوع داده |
 |-------------|-------------|-----------|
-| `meshy_task_id` | شناسه یکتای وظیفه API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | شناسه یکتای وظیفه API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | مدل سه‌بعدی تولیدشده در قالب GLB. | FILE3DGLB |
 | `FBX` | مدل سه‌بعدی تولیدشده در قالب FBX. | FILE3DFBX |
 
 > این مستند با هوش مصنوعی تهیه شده است. اگر خطایی دیدید یا پیشنهادی برای بهبود دارید، خوشحال می‌شویم مشارکت کنید! [ویرایش در GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/fa.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

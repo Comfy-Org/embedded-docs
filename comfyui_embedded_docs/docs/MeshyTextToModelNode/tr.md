@@ -27,11 +27,11 @@ Meshy: Text to Model düğümü, bir metin açıklamasından 3B model oluşturma
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `model_file` | Oluşturulan GLB modelinin dosya adı. Bu çıktı geriye dönük uyumluluk için sağlanmıştır. | STRING |
-| `meshy_task_id` | Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API görevi için benzersiz tanımlayıcı. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB biçiminde oluşturulan 3B model dosyası. | FILE3DGLB |
 | `FBX` | FBX biçiminde oluşturulan 3B model dosyası. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`
+**Source fingerprint (SHA-256):** `cbd1a3d18c31a4021efdae83f597b01b1ff5ce3d7dad19fedc98db420d4e3ebb`

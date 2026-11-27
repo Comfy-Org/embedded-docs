@@ -8,7 +8,7 @@
 
 | 參數 | 描述 | 資料類型 | 必填 | 範圍 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 用於生成的模型。recraftv4_styles 模型是為了風格一致的生成而建構，且一律需要 `style_id` 或 `style_references`。`recraftv4_1_flash` 是最快且最便宜的模型，完全不支援風格。 | DYNAMIC_COMBO | 是 | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `model` | 用於生成的模型。recraftv4_styles 模型是為了風格一致的生成而建構，且一律需要 `style_id` 或 `style_references`。`recraftv4_1_flash` 執行 Recraft V4.1 Flash V2，是最快且最便宜的模型，完全不支援風格。 | DYNAMIC_COMBO | 是 | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | 用於圖像生成的提示詞。最多 10,000 個字元。 | STRING | 是 | 1 到 10000 個字元 |
 | `negative_prompt` | 此輸入會被忽略：Recraft V4 與 V4.1 模型不支援負向提示詞。 | STRING | 是 | N/A |
 | `n` | 要生成的圖像數量（預設值：1）。 | INT | 是 | 1 到 6 |
@@ -51,4 +51,4 @@
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

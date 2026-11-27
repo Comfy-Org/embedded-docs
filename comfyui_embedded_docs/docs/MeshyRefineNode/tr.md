@@ -7,7 +7,7 @@ Meshy: Refine Draft Model düğümü, önceki bir Meshy görevinden alınan 3D t
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 |-----------|-------------|-----------|----------|-------|
 | `model` | Taslak modeli iyileştirmek için kullanılan AI modeli. | COMBO | Evet | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | İyileştirmek istediğiniz taslak modelin benzersiz görev kimliği. | MESHY_TASK_ID | Evet | - |
+| `meshy_task_id` | İyileştirmek istediğiniz taslak modelin benzersiz görev kimliği. | MESHY_TASK_ID, STRING | Evet | - |
 | `enable_pbr` | Temel renge ek olarak PBR Haritaları (metalik, pürüzlülük, normal) oluşturur. Not: Heykel stili kullanılırken bu değer false olarak ayarlanmalıdır; çünkü Heykel stili kendi PBR haritalarını üretir. (varsayılan: False) | BOOLEAN | Evet | - |
 | `texture_prompt` | Dokulandırma sürecini yönlendirmek için bir metin istemi sağlar. En fazla 600 karakter. `texture_image` ile aynı anda kullanılamaz. (varsayılan: boş dize) | STRING | Evet | - |
 | `texture_image` | `texture_image` veya `texture_prompt` öğelerinden yalnızca biri aynı anda kullanılabilir. | IMAGE | Hayır | - |
@@ -20,11 +20,11 @@ Meshy: Refine Draft Model düğümü, önceki bir Meshy görevinden alınan 3D t
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
 | `model_file` | Oluşturulan GLB modelinin dosya adı. (Yalnızca geriye dönük uyumluluk içindir) | STRING |
-| `meshy_task_id` | Gönderilen iyileştirme işi için benzersiz görev kimliği. | MESHY_TASK_ID |
+| `meshy_task_id` | Gönderilen iyileştirme işi için benzersiz görev kimliği. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB formatında nihai iyileştirilmiş 3B model. | FILE3DGLB |
 | `FBX` | FBX formatında nihai iyileştirilmiş 3B model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`
+**Source fingerprint (SHA-256):** `fa15faa0d5bada54579c310c96451db0ed06a803d2cd2e1eeb949a5e5f556145`

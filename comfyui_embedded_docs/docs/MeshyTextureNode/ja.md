@@ -7,7 +7,7 @@ Meshy: Texture Model ノードは、AI生成テクスチャを既存の3Dモデ�
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 | --- | --- | --- | --- | --- |
 | `モデル` | テクスチャリングに使用するAIモデルのバージョンです。 | COMBO | はい | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | 以前のMeshy 3D生成または変換タスクの一意の識別子（タスクID）です。テクスチャを適用するベース3Dモデルを提供します。 | MESHY_TASK_ID | はい | - |
+| `meshy_task_id` | 以前のMeshy 3D生成または変換タスクの一意の識別子（タスクID）です。テクスチャを適用するベース3Dモデルを提供します。 | MESHY_TASK_ID, STRING | はい | - |
 | `元のUVを使用` | 新しいUVを生成する代わりに、モデルの元のUVを使用します。有効（デフォルト: `True`）にすると、Meshyはアップロードされたモデルの既存のテクスチャを保持します。モデルに元のUVがない場合、出力品質が十分でない可能性があります。これは詳細オプションです。 | BOOLEAN | はい | true / false |
 | `PBR` | テクスチャ適用済みモデルのPhysically Based Rendering（PBR）マテリアル出力を有効にします（デフォルト: `False`）。これは詳細オプションです。 | BOOLEAN | はい | true / false |
 | `テキストスタイルプロンプト` | テキストを使用して、オブジェクトの希望するテクスチャスタイルを記述します（デフォルト: 空文字列）。最大600文字。`image_style`と同時に使用できません。 | STRING | はい | - |
@@ -24,11 +24,11 @@ Meshy: Texture Model ノードは、AI生成テクスチャを既存の3Dモデ�
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
 | `model_file` | 生成されたGLBモデルのファイル名。この出力は後方互換性のためにのみ提供されています。 | STRING |
-| `meshy_task_id` | このテクスチャリングジョブの一意のタスク識別子。結果を参照するために使用できます。 | MESHY_TASK_ID |
+| `meshy_task_id` | このテクスチャリングジョブの一意のタスク識別子。結果を参照するために使用できます。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLBファイル形式で保存されたテクスチャ適用済み3Dモデル。 | FILE3DGLB |
 | `FBX` | FBXファイル形式で保存されたテクスチャ適用済み3Dモデル。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

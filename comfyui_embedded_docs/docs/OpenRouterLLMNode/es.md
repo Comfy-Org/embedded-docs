@@ -117,14 +117,6 @@ Compartidas por `moonshotai/kimi-k3` y `moonshotai/kimi-k2.6`.
 
 Estos modelos admiten hasta 10 imágenes de referencia (consulte Entradas de referencia).
 
-### Entradas de Moonshot Kimi K2 Thinking
-
-| Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
-|-----------|-------------|---------------|-------------|-------|
-| `reasoning_effort` | Esfuerzo de razonamiento. 'off' desactiva el razonamiento por completo. (valor predeterminado: "off") | COMBO | No | "off"<br>"low"<br>"medium"<br>"high" |
-
-Modelo de solo texto — no admite imágenes ni videos de referencia.
-
 ### Entradas de Perplexity Sonar Pro
 
 | Parámetro | Descripción | Tipo de datos | Obligatorio | Rango |
@@ -153,7 +145,7 @@ Modelos de solo texto — no admiten imágenes ni videos de referencia.
 
 **Notas:**
 
-- **Modelos disponibles:** Las opciones de modelo disponibles se construyen dinámicamente e incluyen modelos con diferentes capacidades. La lista completa de 36 modelos es:
+- **Modelos disponibles:** Las opciones de modelo disponibles se construyen dinámicamente e incluyen modelos con diferentes capacidades. La lista completa de 35 modelos es:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ Modelos de solo texto — no admiten imágenes ni videos de referencia.
   - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **Restricciones de imágenes y videos:** El número máximo de imágenes y videos de referencia depende del modelo seleccionado. El nodo genera un error si el número total de imágenes o videos proporcionados supera el límite del modelo. Los modelos sin soporte de imágenes o videos no muestran las ranuras de referencia correspondientes.
@@ -185,4 +177,4 @@ Modelos de solo texto — no admiten imágenes ni videos de referencia.
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

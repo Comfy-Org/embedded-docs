@@ -27,11 +27,11 @@ Meshy: Text to Model ノードは、Meshy API を使用してテキスト記述�
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
 | `model_file` | 生成された GLB モデルのファイル名です。この出力は後方互換性のために提供されています。 | STRING |
-| `meshy_task_id` | Meshy API タスクの一意の識別子です。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API タスクの一意の識別子です。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 形式で生成された 3D モデルファイルです。 | FILE3DGLB |
 | `FBX` | FBX 形式で生成された 3D モデルファイルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `a02a5ae28bcae343c628d11ba3efa952b61b8bdf867669f58f1beb0f7c9e49f9`
+**Source fingerprint (SHA-256):** `cbd1a3d18c31a4021efdae83f597b01b1ff5ce3d7dad19fedc98db420d4e3ebb`

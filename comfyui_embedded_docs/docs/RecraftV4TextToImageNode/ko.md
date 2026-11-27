@@ -8,7 +8,7 @@ Recraft V4 및 V4.1 모델을 사용하여 텍스트 프롬프트로부터 이�
 
 | 매개변수 | 설명 | 데이터 타입 | 필수 | 범위 |
 |-----------|-------------|-----------|----------|-------|
-| `model` | 생성에 사용할 모델입니다. recraftv4_styles 모델은 스타일 일관성 있는 생성을 위해 만들어졌으며 항상 style_id 또는 style_references가 필요합니다. `recraftv4_1_flash`는 가장 빠르고 저렴한 모델이며 스타일을 전혀 지원하지 않습니다. | DYNAMIC_COMBO | 예 | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `model` | 생성에 사용할 모델입니다. recraftv4_styles 모델은 스타일 일관성 있는 생성을 위해 만들어졌으며 항상 style_id 또는 style_references가 필요합니다. `recraftv4_1_flash`는 Recraft V4.1 Flash V2를 실행하며, 가장 빠르고 저렴한 모델이고 스타일을 전혀 지원하지 않습니다. | DYNAMIC_COMBO | 예 | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | 이미지 생성을 위한 프롬프트입니다. 최대 10,000자입니다. | STRING | 예 | 1~10000자 |
 | `negative_prompt` | 이 입력은 무시됩니다. 부정 프롬프트는 Recraft V4 및 V4.1 모델에서 지원되지 않습니다. | STRING | 예 | N/A |
 | `n` | 생성할 이미지 수입니다(기본값: 1). | INT | 예 | 1~6 |
@@ -51,4 +51,4 @@ Recraft V4 및 V4.1 모델을 사용하여 텍스트 프롬프트로부터 이�
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

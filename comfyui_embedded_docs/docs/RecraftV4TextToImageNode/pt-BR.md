@@ -8,7 +8,7 @@ Gera imagens a partir de prompts de texto usando os modelos Recraft V4 e V4.1. E
 
 | Parâmetro | Descrição | Tipo de dados | Obrigatório | Intervalo |
 |-----------|-------------|-----------|----------|-------|
-| `modelo` | O modelo a usar para a geração. Os modelos recraftv4_styles são feitos para geração com consistência de estilo e sempre exigem um `style_id` ou `style_references`. `recraftv4_1_flash` é o modelo mais rápido e mais barato e não oferece suporte a nenhum estilo. | DYNAMIC_COMBO | Sim | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `modelo` | O modelo a usar para a geração. Os modelos recraftv4_styles são feitos para geração com consistência de estilo e sempre exigem um `style_id` ou `style_references`. `recraftv4_1_flash` executa o Recraft V4.1 Flash V2, o modelo mais rápido e mais barato, e não oferece suporte a nenhum estilo. | DYNAMIC_COMBO | Sim | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `prompt` | Prompt para a geração da imagem. Máximo de 10.000 caracteres. | STRING | Sim | 1 a 10000 caracteres |
 | `prompt_negativo` | Esta entrada é ignorada: o prompt negativo não é compatível com os modelos Recraft V4 e V4.1. | STRING | Sim | N/A |
 | `n` | O número de imagens a gerar (padrão: 1). | INT | Sim | 1 a 6 |
@@ -51,4 +51,4 @@ Esses modelos compartilham o mesmo parâmetro `size`.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

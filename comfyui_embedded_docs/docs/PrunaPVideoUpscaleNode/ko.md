@@ -8,8 +8,8 @@ Pruna P-Video Upscale는 비디오를 720p, 1080p, 2K 또는 4K로 확대하면�
 | --- | --- | --- | --- | --- |
 | `비디오` | 업스케일할 비디오이며 최대 512 MiB입니다. 10메가픽셀을 초과하는 비디오는 2K 또는 4K 목표로만 전송할 수 있습니다. | VIDEO | 예 | 최대 512 MiB |
 | `대상` | 출력 픽셀 면적입니다. 720p는 약 0.9메가픽셀, 1080p는 2.1, 2K는 3.7, 4K는 8.3입니다. 최대 클립 길이는 목표에 따라 제한됩니다. 2400, 1200, 600 또는 300프레임이며, 24 fps에서 약 100, 50, 25 또는 12.5초입니다(기본값: "1080p"). | COMBO | 예 | "720p"<br>"1080p"<br>"2K"<br>"4K" |
-| `fps` | 출력 프레임 레이트입니다(기본값: "source"). "source"는 비디오의 프레임 레이트를 유지하며 최대 60까지 지원합니다. 더 높은 프레임 레이트는 보간됩니다. 30 fps를 초과하는 출력은 비용이 두 배로 발생합니다. | COMBO | 예 | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
-| `터보` | 디테일은 다소 부드러워지지만 더 빠르게 업스케일하며, 가격은 동일합니다(기본값: false). | BOOLEAN | 아니오 | true<br>false |
+| `fps` | 출력 프레임 레이트입니다(기본값: "source"). "source"는 비디오의 프레임 레이트를 유지하며 최대 60까지 지원합니다. 더 높은 프레임 레이트는 보간됩니다. 30 fps를 초과하는 출력은 비용이 두 배로 발생합니다(`turbo` 사용 시 제외). | COMBO | 예 | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
+| `터보` | 디테일은 다소 부드러워지지만 더 빠르게 업스케일하며, 가격은 더 낮습니다(기본값: false). | BOOLEAN | 아니오 | true<br>false |
 
 ### 매개변수 제약 사항
 
@@ -25,4 +25,4 @@ Pruna P-Video Upscale는 비디오를 720p, 1080p, 2K 또는 4K로 확대하면�
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrunaPVideoUpscaleNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `e8fc88b6177085e0852d17ff92b0a22a26c9914c012a9a244b19da9b2c0e38c2`
+**Source fingerprint (SHA-256):** `0c475fe2afc5804811ddacc6caf8565cf414e27cbbbc2d57175f39b28f927ab6`

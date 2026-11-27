@@ -21,11 +21,11 @@
 
 | اسم المخرج | الوصف | نوع البيانات |
 |-------------|-------------|-----------|
-| `meshy_task_id` | المعرّف الفريد لمهمة Meshy API. | MESHY_TASK_ID |
+| `meshy_task_id` | المعرّف الفريد لمهمة Meshy API. | MESHY_TASK_ID, STRING |
 | `GLB` | النموذج ثلاثي الأبعاد المُولّد بصيغة GLB. | FILE3DGLB |
 | `FBX` | النموذج ثلاثي الأبعاد المُولّد بصيغة FBX. | FILE3DFBX |
 
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

@@ -21,11 +21,11 @@ Questo nodo genera una mesh triangolare pronta per il gioco con un numero di fac
 
 | Nome output | Descrizione | Tipo di dato |
 |-------------|-------------|--------------|
-| `meshy_task_id` | L'identificatore univoco dell'attività API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | L'identificatore univoco dell'attività API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | Il modello 3D generato in formato GLB. | FILE3DGLB |
 | `FBX` | Il modello 3D generato in formato FBX. | FILE3DFBX |
 
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

@@ -7,7 +7,7 @@
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | ドラフトモデルのリファインに使用する AI モデル。 | COMBO | はい | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | リファインしたいドラフトモデルの一意のタスク ID。 | MESHY_TASK_ID | はい | - |
+| `meshy_task_id` | リファインしたいドラフトモデルの一意のタスク ID。 | MESHY_TASK_ID, STRING | はい | - |
 | `enable_pbr` | ベースカラーに加えて PBR マップ（メタリック、ラフネス、ノーマル）を生成します。注意: Sculpture スタイルを使用する場合は false に設定してください。Sculpture スタイルは独自の PBR マップを生成するためです。（デフォルト: False） | BOOLEAN | はい | - |
 | `texture_prompt` | テクスチャ処理をガイドするテキストプロンプトを指定します。最大 600 文字です。`texture_image` とは同時に使用できません。（デフォルト: 空文字列） | STRING | はい | - |
 | `texture_image` | `texture_image` と `texture_prompt` は、同時に使用できるのはいずれか一方のみです。 | IMAGE | いいえ | - |
@@ -20,11 +20,11 @@
 | 出力名 | 説明 | データ型 |
 |-------------|-------------|-----------|
 | `model_file` | 生成された GLB モデルのファイル名。（後方互換性のためだけに存在します） | STRING |
-| `meshy_task_id` | 送信されたリファインメントジョブの一意のタスク ID。 | MESHY_TASK_ID |
+| `meshy_task_id` | 送信されたリファインメントジョブの一意のタスク ID。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 形式の最終リファイン済み 3D モデル。 | FILE3DGLB |
 | `FBX` | FBX 形式の最終リファイン済み 3D モデル。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`
+**Source fingerprint (SHA-256):** `fa15faa0d5bada54579c310c96451db0ed06a803d2cd2e1eeb949a5e5f556145`

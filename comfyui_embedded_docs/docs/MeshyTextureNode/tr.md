@@ -7,7 +7,7 @@ Meshy: Texture Model düğümü, yapay zekâ tarafından oluşturulan dokuları 
 | Parametre | Açıklama | Veri Türü | Gerekli | Aralık |
 | --- | --- | --- | --- | --- |
 | `model` | Doku kaplama için kullanılacak AI model sürümü. | COMBO | Evet | `"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | Önceki bir Meshy 3D üretim veya dönüştürme görevinden alınan benzersiz tanımlayıcı (görev kimliği). Bu, doku kaplanacak temel 3D modeli sağlar. | MESHY_TASK_ID | Evet | - |
+| `meshy_task_id` | Önceki bir Meshy 3D üretim veya dönüştürme görevinden alınan benzersiz tanımlayıcı (görev kimliği). Bu, doku kaplanacak temel 3D modeli sağlar. | MESHY_TASK_ID, STRING | Evet | - |
 | `orijinal UV'yi etkinleştir` | Modelin yeni UV'leri oluşturulmak yerine özgün UV'sini kullanın. Etkinleştirildiğinde (varsayılan: `True`), Meshy yüklenen modeldeki mevcut dokuları korur. Modelin özgün UV'si yoksa çıktının kalitesi o kadar iyi olmayabilir. Bu gelişmiş bir seçenektir. | BOOLEAN | Evet | true / false |
 | `pbr` | Doku kaplanmış model için Fiziksel Tabanlı İşleme (PBR) malzeme çıktısını etkinleştirir (varsayılan: `False`). Bu gelişmiş bir seçenektir. | BOOLEAN | Evet | true / false |
 | `metin stil istemi` | Metin kullanarak nesne için istediğiniz doku stilini tanımlayın (varsayılan: boş dize). En fazla 600 karakter. `image_style` ile aynı anda kullanılamaz. | STRING | Evet | - |
@@ -24,11 +24,11 @@ Meshy: Texture Model düğümü, yapay zekâ tarafından oluşturulan dokuları 
 | Çıktı Adı | Açıklama | Veri Türü |
 | --- | --- | --- |
 | `model_file` | Oluşturulan GLB modelinin dosya adı. Bu çıktı yalnızca geriye dönük uyumluluk için sağlanır. | STRING |
-| `meshy_task_id` | Bu doku kaplama işi için benzersiz görev tanımlayıcısı; sonuca başvurmak için kullanılabilir. | MESHY_TASK_ID |
+| `meshy_task_id` | Bu doku kaplama işi için benzersiz görev tanımlayıcısı; sonuca başvurmak için kullanılabilir. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB dosya biçiminde kaydedilen doku kaplanmış 3D model. | FILE3DGLB |
 | `FBX` | FBX dosya biçiminde kaydedilen doku kaplanmış 3D model. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `30d51f6efe3602f27d99706840c974baf2c4397a4f9a191f3478e7eff372e319`
+**Source fingerprint (SHA-256):** `31a79c719799c04d1819d36dc1ec231b9954030a14dbb29461ecd782867c32cb`

@@ -21,11 +21,11 @@ Este nó gera uma malha triangular pronta para jogos com uma contagem de faces a
 
 | Nome da saída | Descrição | Tipo de dados |
 |-------------|-------------|-----------|
-| `meshy_task_id` | O identificador exclusivo da tarefa da API Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | O identificador exclusivo da tarefa da API Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | O modelo 3D gerado no formato GLB. | FILE3DGLB |
 | `FBX` | O modelo 3D gerado no formato FBX. | FILE3DFBX |
 
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

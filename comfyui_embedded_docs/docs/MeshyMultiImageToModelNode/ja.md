@@ -52,11 +52,11 @@
 | 出力名 | 説明 | データ型 |
 | --- | --- | --- |
 | `model_file` | 生成されたGLBモデルのファイル名です。この出力は後方互換性のためだけに提供されます。 | STRING |
-| `meshy_task_id` | Meshy APIタスクの一意の識別子です。 | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy APIタスクの一意の識別子です。 | MESHY_TASK_ID, STRING |
 | `GLB` | GLB形式で生成された3Dモデルです。 | FILE3DGLB |
 | `FBX` | FBX形式で生成された3Dモデルです。 | FILE3DFBX |
 
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`
+**Source fingerprint (SHA-256):** `656386a417ce082160a25acf6ddfe3a52a2c04b295f07d8749e8d420eaf404c6`

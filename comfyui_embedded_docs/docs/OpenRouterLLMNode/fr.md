@@ -117,14 +117,6 @@ Communes à `moonshotai/kimi-k3` et `moonshotai/kimi-k2.6`.
 
 Ces modèles prennent en charge jusqu’à 10 images de référence (voir Entrées de référence).
 
-### Entrées Moonshot Kimi K2 Thinking
-
-| Paramètre | Description | Type de données | Requis | Plage |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Effort de raisonnement. 'off' désactive entièrement le raisonnement. (défaut : "off") | COMBO | Non | "off"<br>"low"<br>"medium"<br>"high" |
-
-Modèle textuel uniquement — aucune image ou vidéo de référence.
-
 ### Entrées Perplexity Sonar Pro
 
 | Paramètre | Description | Type de données | Requis | Plage |
@@ -153,7 +145,7 @@ Modèles textuels uniquement — aucune image ou vidéo de référence.
 
 **Notes :**
 
-- **Modèles disponibles :** Les options de modèle disponibles sont construites dynamiquement et incluent des modèles aux capacités différentes. La liste complète des 36 modèles est la suivante :
+- **Modèles disponibles :** Les options de modèle disponibles sont construites dynamiquement et incluent des modèles aux capacités différentes. La liste complète des 35 modèles est la suivante :
   - Anthropic : `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI : `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google : `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ Modèles textuels uniquement — aucune image ou vidéo de référence.
   - Qwen : , `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral : `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI : `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot : `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot : `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity : `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **Contraintes d’image et de vidéo :** Le nombre maximal d’images et de vidéos de référence dépend du modèle sélectionné. Le nœud génère une erreur si le nombre total d’images ou de vidéos fournies dépasse la limite du modèle. Les modèles sans prise en charge d’images ou de vidéos n’affichent pas les emplacements de référence correspondants.
@@ -185,4 +177,4 @@ Modèles textuels uniquement — aucune image ou vidéo de référence.
 > Cette documentation a été générée par IA. Si vous trouvez des erreurs ou avez des suggestions d'amélioration, n'hésitez pas à contribuer ! [Modifier sur GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/fr.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

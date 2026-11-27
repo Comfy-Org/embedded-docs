@@ -6,7 +6,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | معرّف المهمة الفريد من عملية تجهيز هيكل شخصية Meshy سبق إكمالها. | MESHY_RIGGED_TASK_ID | نعم | N/A |
+| `rig_task_id` | معرّف المهمة الفريد من عملية تجهيز هيكل شخصية Meshy سبق إكمالها. | MESHY_RIGGED_TASK_ID, STRING | نعم | N/A |
 | `action_id` | معرّف رقمي لإجراء الرسوم المتحركة المطلوب تطبيقه. زُر https://docs.meshy.ai/en/api/animation-library للحصول على قائمة بالقيم المتاحة. (الافتراضي: 0) | INT | نعم | 0 إلى 696 |
 
 ## المخرجات
@@ -20,4 +20,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

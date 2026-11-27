@@ -8,7 +8,7 @@
 
 | פרמטר | תיאור | סוג נתונים | נדרש | טווח |
 |-----------|-------------|-----------|----------|-------|
-| `מודל` | המודל שבו יש להשתמש ליצירה. מודלי recraftv4_styles בנויים ליצירה עקבית בסגנון ותמיד דורשים style_id או style_references. `recraftv4_1_flash` הוא המודל המהיר והזול ביותר ואינו תומך בסגנונות כלל. | DYNAMIC_COMBO | כן | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `מודל` | המודל שבו יש להשתמש ליצירה. מודלי recraftv4_styles בנויים ליצירה עקבית בסגנון ותמיד דורשים style_id או style_references. `recraftv4_1_flash` מריץ את Recraft V4.1 Flash V2, המודל המהיר והזול ביותר, ואינו תומך בסגנונות כלל. | DYNAMIC_COMBO | כן | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `פרומפט` | פרומפט ליצירת התמונה. מקסימום 10,000 תווים. | STRING | כן | 1 עד 10,000 תווים |
 | `הנחיה שלילית` | קלט זה מתעלמים ממנו: פרומפט שלילי אינו נתמך על ידי מודלי Recraft V4 ו-V4.1. | STRING | כן | N/A |
 | `n` | מספר התמונות ליצירה (ברירת מחדל: 1). | INT | כן | 1 עד 6 |
@@ -51,4 +51,4 @@
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

@@ -21,11 +21,11 @@ Bu düğüm, Meshy T2.5 ile hedef yüz sayısında oyuna hazır bir üçgen ağ 
 
 | Çıktı Adı | Açıklama | Veri Türü |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Meshy API görevinin benzersiz tanımlayıcısı. | MESHY_TASK_ID |
+| `meshy_task_id` | Meshy API görevinin benzersiz tanımlayıcısı. | MESHY_TASK_ID, STRING |
 | `GLB` | Oluşturulan 3B model, GLB formatında. | FILE3DGLB |
 | `FBX` | Oluşturulan 3B model, FBX formatında. | FILE3DFBX |
 
 > Bu belge yapay zeka tarafından oluşturulmuştur. Herhangi bir hata bulursanız veya iyileştirme önerileriniz varsa, katkıda bulunmaktan çekinmeyin! [GitHub'da Düzenle](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextToModelSmartTopologyNode/tr.md)
 
 ---
-**Source fingerprint (SHA-256):** `9fcdc846a4ba39cf3d099629637fbb0cf6d9c8d65bcee8aff5ec6ac5c76b6af3`
+**Source fingerprint (SHA-256):** `a49cdddcb2e50ce21d84a51c552bb06f049b62c316532eddd16a0c7c8416a8e4`

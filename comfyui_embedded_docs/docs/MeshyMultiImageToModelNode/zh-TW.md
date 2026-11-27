@@ -52,11 +52,11 @@
 | 輸出名稱 | 描述 | 資料類型 |
 | --- | --- | --- |
 | `模型檔案` | 所產生 GLB 模型的檔案名稱。此輸出僅為回溯相容而提供。 | STRING |
-| `meshy 任務 ID` | Meshy API 任務的唯一識別碼。 | MESHY_TASK_ID |
+| `meshy 任務 ID` | Meshy API 任務的唯一識別碼。 | MESHY_TASK_ID, STRING |
 | `GLB` | 以 GLB 格式產生的 3D 模型。 | FILE3DGLB |
 | `FBX` | 以 FBX 格式產生的 3D 模型。 | FILE3DFBX |
 
 > 本文檔由 AI 生成。如果您發現任何錯誤或有改進建議，歡迎貢獻！ [在 GitHub 上編輯](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyMultiImageToModelNode/zh-TW.md)
 
 ---
-**Source fingerprint (SHA-256):** `9475279c0990fc069b4fef2bf0e2e20218ca1a9591a261ce6d33a2b651782ddb`
+**Source fingerprint (SHA-256):** `656386a417ce082160a25acf6ddfe3a52a2c04b295f07d8749e8d420eaf404c6`

@@ -29,11 +29,11 @@
 
 | Имя выхода | Описание | Тип данных |
 |-------------|-------------|-----------|
-| `meshy_task_id` | Уникальный идентификатор задачи Meshy API. | MESHY_TASK_ID |
+| `meshy_task_id` | Уникальный идентификатор задачи Meshy API. | MESHY_TASK_ID, STRING |
 | `GLB` | Сгенерированная 3D-модель в формате GLB. | FILE3DGLB |
 | `FBX` | Сгенерированная 3D-модель в формате FBX. | FILE3DFBX |
 
 > Эта документация была создана с помощью ИИ. Если вы обнаружите ошибки или у вас есть предложения по улучшению, пожалуйста, внесите свой вклад! [Редактировать на GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/ru.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

@@ -29,11 +29,11 @@
 
 | שם פלט | תיאור | סוג נתונים |
 |-------------|-------------|-----------|
-| `meshy_task_id` | המזהה הייחודי של משימת ה-API של Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | המזהה הייחודי של משימת ה-API של Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | המודל התלת-ממדי שנוצר בפורמט GLB. | FILE3DGLB |
 | `FBX` | המודל התלת-ממדי שנוצר בפורמט FBX. | FILE3DFBX |
 
 > מסמך זה נוצר על ידי בינה מלאכותית. אם מצאתם שגיאות או שיש לכם הצעות לשיפור, אתם מוזמנים לתרום! [עריכה ב-GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/he.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

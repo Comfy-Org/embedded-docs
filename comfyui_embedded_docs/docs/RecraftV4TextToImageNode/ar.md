@@ -8,7 +8,7 @@
 
 | المعامل | الوصف | نوع البيانات | مطلوب | النطاق |
 |-----------|-------------|-----------|----------|-------|
-| `النموذج` | النموذج المستخدم للتوليد. نماذج recraftv4_styles مُصممة لتوليد متسق مع النمط وتتطلب دائمًا style_id أو style_references. `recraftv4_1_flash` هو الأسرع والأرخص ولا يدعم أي أنماط على الإطلاق. | DYNAMIC_COMBO | نعم | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
+| `النموذج` | النموذج المستخدم للتوليد. نماذج recraftv4_styles مُصممة لتوليد متسق مع النمط وتتطلب دائمًا style_id أو style_references. `recraftv4_1_flash` يشغّل Recraft V4.1 Flash V2، وهو الأسرع والأرخص ولا يدعم أي أنماط على الإطلاق. | DYNAMIC_COMBO | نعم | "recraftv4_1"<br>"recraftv4_1_flash"<br>"recraftv4_1_utility"<br>"recraftv4_1_pro"<br>"recraftv4_1_utility_pro"<br>"recraftv4"<br>"recraftv4_pro"<br>"recraftv4_styles"<br>"recraftv4_styles_pro" |
 | `المطالبة` | الموجّه النصي لتوليد الصورة. الحد الأقصى 10,000 حرف. | STRING | نعم | 1 إلى 10000 حرف |
 | `المطالبة السلبية` | يتم تجاهل هذا المدخل: الموجّه السلبي غير مدعوم من نماذج Recraft V4 وV4.1. | STRING | نعم | N/A |
 | `عدد الصور` | عدد الصور المراد توليدها (الافتراضي: 1). | INT | نعم | 1 إلى 6 |
@@ -51,4 +51,4 @@
 > تم إنشاء هذه الوثيقة بواسطة الذكاء الاصطناعي. إذا وجدت أي أخطاء أو لديك اقتراحات للتحسين، فلا تتردد في المساهمة! [تحرير على GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/RecraftV4TextToImageNode/ar.md)
 
 ---
-**Source fingerprint (SHA-256):** `690286e663f27b525e58f81a7f883e490dacd48c1a34ee7b8e9ad4efd9935ff1`
+**Source fingerprint (SHA-256):** `a762c76c262ac2e973ab4dfebf392cd66ea5672cca431ad4f849eb7819ead6a0`

@@ -29,11 +29,11 @@ Este nodo genera una malla triangular lista para juegos a partir de una imagen d
 
 | Nombre de salida | Descripción | Tipo de datos |
 |------------------|-------------|---------------|
-| `meshy_task_id` | El identificador único de la tarea de la API de Meshy. | MESHY_TASK_ID |
+| `meshy_task_id` | El identificador único de la tarea de la API de Meshy. | MESHY_TASK_ID, STRING |
 | `GLB` | El modelo 3D generado en formato GLB. | FILE3DGLB |
 | `FBX` | El modelo 3D generado en formato FBX. | FILE3DFBX |
 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyImageToModelSmartTopologyNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `e78034a591825ec6e105df1942cf501e882ac780cc2584bfa04b424ecc34a02e`
+**Source fingerprint (SHA-256):** `17704680639b8abca5247f2a3f6392871a0feb2a67e4396ba6922cf4c11d7143`

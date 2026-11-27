@@ -8,8 +8,8 @@ Pruna P-Video Upscale amplía un video a 720p, 1080p, 2K o 4K mientras mantiene 
 | --- | --- | --- | --- | --- |
 | `vídeo` | Video que se va a ampliar, hasta 512 MiB. Los videos de más de 10 megapíxeles solo se pueden enviar al objetivo de 2K o 4K. | VIDEO | Sí | Hasta 512 MiB |
 | `objetivo` | Área de píxeles de salida: 720p es aproximadamente 0,9 megapíxeles, 1080p 2,1, 2K 3,7 y 4K 8,3. La duración máxima del clip está limitada por el objetivo: 2400, 1200, 600 o 300 fotogramas, aproximadamente 100, 50, 25 o 12,5 segundos a 24 fps (predeterminado: "1080p"). | COMBO | Sí | "720p"<br>"1080p"<br>"2K"<br>"4K" |
-| `fps` | Tasa de fotogramas de salida (predeterminado: "source"). "source" mantiene la tasa del video, hasta 60; una tasa mayor se interpola. La salida por encima de 30 fps cuesta el doble. | COMBO | Sí | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
-| `turbo` | Ampliación más rápida con un detalle más suave, al mismo precio (predeterminado: false). | BOOLEAN | No | true<br>false |
+| `fps` | Tasa de fotogramas de salida (predeterminado: "source"). "source" mantiene la tasa del video, hasta 60; una tasa mayor se interpola. La salida por encima de 30 fps cuesta el doble, salvo con `turbo`. | COMBO | Sí | "source"<br>"16"<br>"24"<br>"25"<br>"30"<br>"48"<br>"50"<br>"60" |
+| `turbo` | Ampliación más rápida con un detalle más suave, a un precio más bajo (predeterminado: false). | BOOLEAN | No | true<br>false |
 
 ### Restricciones de los parámetros
 
@@ -25,4 +25,4 @@ Pruna P-Video Upscale amplía un video a 720p, 1080p, 2K o 4K mientras mantiene 
 > Esta documentación fue generada por IA. Si encuentra algún error o tiene sugerencias de mejora, ¡no dude en contribuir! [Editar en GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/PrunaPVideoUpscaleNode/es.md)
 
 ---
-**Source fingerprint (SHA-256):** `e8fc88b6177085e0852d17ff92b0a22a26c9914c012a9a244b19da9b2c0e38c2`
+**Source fingerprint (SHA-256):** `0c475fe2afc5804811ddacc6caf8565cf414e27cbbbc2d57175f39b28f927ab6`

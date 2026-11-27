@@ -6,7 +6,7 @@ Questo nodo applica una specifica azione di animazione a un personaggio 3D prece
 
 | Parametro | Descrizione | Tipo di dato | Obbligatorio | Intervallo |
 |-----------|-------------|-----------|----------|-------|
-| `rig_task_id` | L'ID attività univoco di una precedente operazione di rigging di un personaggio Meshy completata. | MESHY_RIGGED_TASK_ID | Sì | N/A |
+| `rig_task_id` | L'ID attività univoco di una precedente operazione di rigging di un personaggio Meshy completata. | MESHY_RIGGED_TASK_ID, STRING | Sì | N/A |
 | `action_id` | Il numero ID dell'azione di animazione da applicare. Visita https://docs.meshy.ai/en/api/animation-library per un elenco dei valori disponibili. (predefinito: 0) | INT | Sì | 0 a 696 |
 
 ## Output
@@ -20,4 +20,4 @@ Questo nodo applica una specifica azione di animazione a un personaggio 3D prece
 > Questa documentazione è stata generata dall'IA. Se trovi errori o hai suggerimenti per migliorarla, sentiti libero di contribuire! [Modifica su GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyAnimateModelNode/it.md)
 
 ---
-**Source fingerprint (SHA-256):** `760e94d3a92910051d9b473545191842dc9672e6c4a59c3d1cd9cfdc5eb2589d`
+**Source fingerprint (SHA-256):** `d2fe5e62d8261880fe55cf305bc8bac4cb85367914d9ddfe2308ad1b43c85a16`

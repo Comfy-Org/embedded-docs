@@ -7,7 +7,7 @@ Meshy: Refine Draft Model 노드는 이전 Meshy 작업의 3D 초안 모델을 �
 | 매개변수 | 설명 | 데이터 타입 | 필수 여부 | 범위 |
 |-----------|-------------|-----------|----------|-------|
 | `model` | 초안 모델을 정제하는 데 사용되는 AI 모델입니다. | COMBO | 예 | `"meshy-7.1"`<br>`"meshy-7"`<br>`"meshy-6"`<br>`"latest"` |
-| `meshy_task_id` | 정제하려는 초안 모델의 고유 작업 ID입니다. | MESHY_TASK_ID | 예 | - |
+| `meshy_task_id` | 정제하려는 초안 모델의 고유 작업 ID입니다. | MESHY_TASK_ID, STRING | 예 | - |
 | `enable_pbr` | 기본 색상 외에 PBR 맵(메탈릭, 러프니스, 노멀)을 생성합니다. 참고: Sculpture 스타일을 사용할 때는 false로 설정해야 합니다. Sculpture 스타일은 자체 PBR 맵 세트를 생성하기 때문입니다. (기본값: False) | BOOLEAN | 예 | - |
 | `texture_prompt` | 텍스처링 과정을 안내하는 텍스트 프롬프트를 제공합니다. 최대 600자입니다. `texture_image`와 동시에 사용할 수 없습니다. (기본값: 빈 문자열) | STRING | 예 | - |
 | `texture_image` | `texture_image` 또는 `texture_prompt` 중 하나만 동시에 사용할 수 있습니다. | IMAGE | 아니요 | - |
@@ -20,11 +20,11 @@ Meshy: Refine Draft Model 노드는 이전 Meshy 작업의 3D 초안 모델을 �
 | 출력 이름 | 설명 | 데이터 타입 |
 |-------------|-------------|-----------|
 | `model_file` | 생성된 GLB 모델의 파일 이름입니다. (이전 버전과의 호환성 전용입니다.) | STRING |
-| `meshy_task_id` | 제출된 정제 작업에 대한 고유 작업 ID입니다. | MESHY_TASK_ID |
+| `meshy_task_id` | 제출된 정제 작업에 대한 고유 작업 ID입니다. | MESHY_TASK_ID, STRING |
 | `GLB` | GLB 형식의 최종 정제 3D 모델입니다. | FILE3DGLB |
 | `FBX` | FBX 형식의 최종 정제 3D 모델입니다. | FILE3DFBX |
 
 > 이 문서는 AI에 의해 생성되었습니다. 오류를 발견하거나 개선 제안이 있으시면 기여해 주세요! [GitHub에서 편집](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyRefineNode/ko.md)
 
 ---
-**Source fingerprint (SHA-256):** `d9aac584e6abf9688c97bf01ea515bca13844d08c93923a672fb2853266926c8`
+**Source fingerprint (SHA-256):** `fa15faa0d5bada54579c310c96451db0ed06a803d2cd2e1eeb949a5e5f556145`

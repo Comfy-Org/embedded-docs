@@ -7,7 +7,7 @@ This node textures a previously created 3D model using 1 to 4 reference views of
 | Parameter | Description | Data Type | Required | Range |
 |-----------|-------------|-----------|----------|-------|
 | `model` | The AI model used for the texturing job. Only "meshy-7" is currently available. | COMBO | Yes | `"meshy-7"` |
-| `meshy_task_id` | The task ID of the previously created 3D model to be textured. | MESHY_TASK_ID | Yes | — |
+| `meshy_task_id` | The task ID of the previously created 3D model to be textured. | MESHY_TASK_ID, STRING | Yes | — |
 | `multiview_images` | Reference views of the same object. The first image is the primary (front) view; the order of the remaining views does not matter. Growable slot: connect 1 to 4 images (`image_1` to `image_4`). | IMAGE | Yes | 1 to 4 images |
 | `enable_original_uv` | Use the original UV of the model instead of generating new UVs. When enabled, Meshy preserves existing textures from the uploaded model. If the model has no original UV, the quality of the output might not be as good. (default: True; advanced option) | BOOLEAN | No | True / False |
 | `pbr` | Enables PBR (physically based rendering) texture generation. (default: False; advanced option) | BOOLEAN | No | True / False |
@@ -20,11 +20,11 @@ This node textures a previously created 3D model using 1 to 4 reference views of
 | Output Name | Description | Data Type |
 |-------------|-------------|-----------|
 | `model_file` | Model file name. This output is kept for backward compatibility only. | STRING |
-| `meshy_task_id` | Task ID of the texturing job. | MESHY_TASK_ID |
+| `meshy_task_id` | Task ID of the texturing job. | MESHY_TASK_ID, STRING |
 | `GLB` | The textured 3D model downloaded in GLB format. | FILE3DGLB |
 | `FBX` | The textured 3D model downloaded in FBX format. | FILE3DFBX |
 
 > This documentation was AI-generated. If you find any errors or have suggestions for improvement, please feel free to contribute! [Edit on GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/MeshyTextureMultiViewNode/en.md)
 
 ---
-**Source fingerprint (SHA-256):** `3a08d003683a182121471a064833c09b932c7c84c20fd5cb5ac0285e135b2b7e`
+**Source fingerprint (SHA-256):** `358cc98a3e60795a9294e302deecb7501da2425bf7afe90462999f3e77ab1c3b`

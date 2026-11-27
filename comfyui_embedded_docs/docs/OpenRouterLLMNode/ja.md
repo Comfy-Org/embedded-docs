@@ -117,14 +117,6 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 これらのモデルは最大10個の参照画像をサポートしています（参照入力を参照）。
 
-### Moonshot Kimi K2 Thinking 入力
-
-| Parameter | Description | Data Type | Required | Range |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | 推論エフォート。'off' を指定すると推論が完全に無効になります。（デフォルト: "off"） | COMBO | いいえ | "off"<br>"low"<br>"medium"<br>"high" |
-
-テキストのみ対応のモデルです。参照画像や参照ビデオは使用できません。
-
 ### Perplexity Sonar Pro 入力
 
 | Parameter | Description | Data Type | Required | Range |
@@ -153,7 +145,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 
 **注記：**
 
-- **利用可能なモデル：** 利用可能なモデルオプションは動的に構築され、異なる機能を持つモデルが含まれます。全36モデルのリストは次のとおりです：
+- **利用可能なモデル：** 利用可能なモデルオプションは動的に構築され、異なる機能を持つモデルが含まれます。全35モデルのリストは次のとおりです：
   - Anthropic: `anthropic/claude-opus-5`、`anthropic/claude-opus-4.8`、`anthropic/claude-opus-4.7`、`anthropic/claude-fable-5`、`anthropic/claude-sonnet-5`、`anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`、`openai/gpt-5.6-sol`、`openai/gpt-5.6-terra-pro`、`openai/gpt-5.6-terra`、`openai/gpt-5.6-luna-pro`、`openai/gpt-5.6-luna`、`openai/gpt-5.5-pro`、`openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
   - Qwen: `qwen/qwen3.6-plus`、`qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`、`mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`、`z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`、`moonshotai/kimi-k2.6`、`moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`、`moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`、`perplexity/sonar-reasoning-pro`、`perplexity/sonar-deep-research`
 
 - **画像・ビデオの制限：** 参照画像と参照ビデオの最大数は選択したモデルによって異なります。提供された画像またはビデオの合計数がモデルの上限を超えると、ノードはエラーを発生させます。画像またはビデオに対応していないモデルでは、対応する参照スロットは表示されません。
@@ -185,4 +177,4 @@ OpenRouter LLM ノードは、OpenRouter サービスを通じて利用できる
 > このドキュメントは AI によって生成されました。エラーを見つけた場合や改善のご提案がある場合は、ぜひ貢献してください！ [GitHub で編集](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/ja.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`

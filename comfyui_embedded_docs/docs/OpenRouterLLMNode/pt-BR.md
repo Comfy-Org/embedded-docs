@@ -117,14 +117,6 @@ Compartilhadas por `moonshotai/kimi-k3` e `moonshotai/kimi-k2.6`.
 
 Esses modelos suportam até 10 imagens de referência (veja Entradas de referência).
 
-### Entradas do Moonshot Kimi K2 Thinking
-
-| Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
-|-----------|-------------|-----------|----------|-------|
-| `reasoning_effort` | Esforço de raciocínio. 'off' desativa o raciocínio completamente. (padrão: "off") | COMBO | Não | "off"<br>"low"<br>"medium"<br>"high" |
-
-Modelo somente de texto — sem imagens ou vídeos de referência.
-
 ### Entradas do Perplexity Sonar Pro
 
 | Parâmetro | Descrição | Tipo de Dado | Obrigatório | Faixa |
@@ -153,7 +145,7 @@ Modelos somente de texto — sem imagens ou vídeos de referência.
 
 **Notas:**
 
-- **Modelos disponíveis:** As opções de modelos disponíveis são construídas dinamicamente e incluem modelos com diferentes capacidades. A lista completa dos 36 modelos é:
+- **Modelos disponíveis:** As opções de modelos disponíveis são construídas dinamicamente e incluem modelos com diferentes capacidades. A lista completa dos 35 modelos é:
   - Anthropic: `anthropic/claude-opus-5`, `anthropic/claude-opus-4.8`, `anthropic/claude-opus-4.7`, `anthropic/claude-fable-5`, `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`
   - OpenAI: `openai/gpt-5.6-sol-pro`, `openai/gpt-5.6-sol`, `openai/gpt-5.6-terra-pro`, `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna-pro`, `openai/gpt-5.6-luna`, `openai/gpt-5.5-pro`, `openai/gpt-5.5`
   - Google: `google/gemini-3.5-flash`
@@ -163,7 +155,7 @@ Modelos somente de texto — sem imagens ou vídeos de referência.
   - Qwen: `qwen/qwen3.6-plus`, `qwen/qwen3.6-flash`
   - Mistral: `mistralai/mistral-large-2512`, `mistralai/mistral-medium-3-5`
   - Z.AI: `z-ai/glm-4.6`, `z-ai/glm-5`
-  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`, `moonshotai/kimi-k2-thinking`
+  - Moonshot: `moonshotai/kimi-k3`, `moonshotai/kimi-k2.6`
   - Perplexity: `perplexity/sonar-pro`, `perplexity/sonar-reasoning-pro`, `perplexity/sonar-deep-research`
 
 - **Restrições de imagem e vídeo:** O número máximo de imagens e vídeos de referência depende do modelo selecionado. O nó gera um erro se o número total de imagens ou vídeos fornecidos exceder o limite do modelo. Modelos sem suporte a imagem ou vídeo não exibem os respectivos slots de referência.
@@ -185,4 +177,4 @@ Modelos somente de texto — sem imagens ou vídeos de referência.
 > Esta documentação foi gerada por IA. Se você encontrar erros ou tiver sugestões de melhoria, sinta-se à vontade para contribuir! [Editar no GitHub](https://github.com/Comfy-Org/embedded-docs/blob/main/comfyui_embedded_docs/docs/OpenRouterLLMNode/pt-BR.md)
 
 ---
-**Source fingerprint (SHA-256):** `8861035e1334ade35ecb29495d77c1ff19571d75e92fdb917f39dc921fe82cce`
+**Source fingerprint (SHA-256):** `7269c5823741963139f20f970b0faaae77781b712e6def96bfaebbfca09f0400`
