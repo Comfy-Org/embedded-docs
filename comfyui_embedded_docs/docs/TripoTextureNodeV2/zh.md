@@ -16,7 +16,7 @@
 | `texture_quality` | 生成纹理的质量。`detailed` = 高清纹理，`extreme` = 8K 超高清纹理。（默认值："standard"）高级输入。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | 纹理与模型的对齐方式。（默认值："original_image"）高级输入。 | COMBO | 否 | "original_image"<br>"geometry" |
 | `texture_prompt` | 可选的纹理生成文本指导。对于导入的模型（Tripo: Import Model）实际上必需，因为这些模型没有源图像可用于推断颜色。不能与参考图像结合使用。（默认值：空） | STRING | 否 | - |
-| `model_version` | 纹理模型：v3.0 用于使用 v3.x 生成的网格。（默认值：v3_0_20250812） | COMBO | 否 | `"v3.0-20250812"` |
+| `model_version` | 纹理模型：v3.0 用于使用 v3.x 生成的网格。（默认值：v3.0-20250812） | COMBO | 否 | `"v3.0-20250812"` |
 | `style_image` | 用于纹理艺术风格的参考图像。仅与 `texture_prompt` 一起使用。 | IMAGE | 否 | - |
 | `reference` | 引导纹理的参考图像。不能与 `texture_prompt` 或 `style_image` 结合使用。（默认值："none"） | DYNAMIC_COMBO | 否 | "none"<br>"image"<br>"multiview" |
 | `part_names` | 来自 Tripo: Segment Model 的逗号分隔部件名称，用于指定要纹理化的部件。为空则为每个部件添加纹理。（默认值：空）高级输入。 | STRING | 否 | - |

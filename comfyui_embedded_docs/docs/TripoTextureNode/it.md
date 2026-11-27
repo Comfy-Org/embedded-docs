@@ -17,7 +17,7 @@ Il nodo Tripo: Texture model (Legacy) aggiunge texture a un modello 3D Tripo esi
 | `qualità_texture` | Qualità della risoluzione delle texture: detailed = texture HD, extreme = texture 8K Ultra. (predefinito: "standard"). Costo approssimativo: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `allineamento_texture` | Metodo utilizzato per allineare le texture generate al modello. (predefinito: "original_image") | COMBO | No | "original_image"<br>"geometry" |
 | `prompt_texture` | Guida testuale opzionale per il texturing. In pratica obbligatoria per i modelli importati (Tripo: Import Model), che non hanno un'immagine di origine da cui inferire i colori. Non può essere combinata con immagini di riferimento. (predefinito: "") | STRING | No | - |
-| `model_version` | Modello di texture: v3.0 per mesh generate con v3.x. (predefinito: v3.0_20250812) | COMBO | No | `"v3.0-20250812"` |
+| `model_version` | Modello di texture: v3.0 per mesh generate con v3.x. (predefinito: v3.0-20250812) | COMBO | No | `"v3.0-20250812"` |
 | `style_image` | Immagine di riferimento per lo stile artistico delle texture. Utilizzata solo insieme a `texture_prompt`. | IMAGE | No | - |
 | `riferimento` | Immagini di riferimento che guidano le texture. Non può essere combinato con `texture_prompt` o `style_image`. (predefinito: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nomi delle parti separati da virgola da Tripo: Segment Model da texturizzare. Se vuoto, texturizza ogni parte. (predefinito: "") | STRING | No | - |

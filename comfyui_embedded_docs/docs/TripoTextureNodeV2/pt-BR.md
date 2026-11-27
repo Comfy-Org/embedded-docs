@@ -16,7 +16,7 @@ Este nó adiciona texturas a um modelo 3D existente de um fluxo de trabalho Trip
 | `texture_quality` | Qualidade das texturas geradas. `detailed` = texturas HD, `extreme` = texturas 8K Ultra. (padrão: "standard") Entrada avançada. | COMBO | Não | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Como as texturas são alinhadas ao modelo. (padrão: "original_image") Entrada avançada. | COMBO | Não | "original_image"<br>"geometry" |
 | `texture_prompt` | Orientação textual opcional para texturização. Obrigatório na prática para modelos importados (Tripo: Import Model), que não possuem imagem de origem para inferir cores. Não pode ser combinado com imagens de referência. (padrão: vazio) | STRING | Não | - |
-| `model_version` | Modelo de textura: v3.0 para malhas geradas com v3.x. (padrão: v3_0_20250812) | COMBO | Não | `"v3.0-20250812"` |
+| `model_version` | Modelo de textura: v3.0 para malhas geradas com v3.x. (padrão: v3.0-20250812) | COMBO | Não | `"v3.0-20250812"` |
 | `style_image` | Imagem de referência para o estilo artístico das texturas. Usada apenas junto com `texture_prompt`. | IMAGE | Não | - |
 | `reference` | Imagens de referência que orientam as texturas. Não pode ser combinado com `texture_prompt` ou `style_image`. (padrão: "none") | DYNAMIC_COMBO | Não | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nomes de partes separados por vírgula do Tripo: Segment Model a serem texturizadas. Vazio texturiza todas as partes. (padrão: vazio) Entrada avançada. | STRING | Não | - |

@@ -14,7 +14,7 @@
 | `texture_quality` | איכות הטקסטורות שנוצרות. `detailed` = טקסטורות HD, `extreme` = טקסטורות 8K Ultra. (ברירת מחדל: "standard") קלט מתקדם. | COMBO | לא | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | כיצד הטקסטורות מיושרות למודל. (ברירת מחדל: "original_image") קלט מתקדם. | COMBO | לא | "original_image"<br>"geometry" |
 | `texture_prompt` | הנחיית טקסט אופציונלית ליצירת טקסטורות. נדרש בפועל עבור מודלים מיובאים (Tripo: Import Model), שאין להם תמונת מקור שממנה ניתן להסיק צבעים. לא ניתן לשלב עם תמונות עזר. (ברירת מחדל: ריק) | STRING | לא | - |
-| `model_version` | מודל טקסטורות: v3.0 עבור meshes שנוצרו עם v3.x. (ברירת מחדל: v3_0_20250812) | COMBO | לא | `"v3.0-20250812"` |
+| `model_version` | מודל טקסטורות: v3.0 עבור meshes שנוצרו עם v3.x. (ברירת מחדל: v3.0-20250812) | COMBO | לא | `"v3.0-20250812"` |
 | `style_image` | תמונת עזר לסגנון האמנותי של הטקסטורות. משמשת רק יחד עם `texture_prompt`. | IMAGE | לא | - |
 | `reference` | תמונות עזר המנחות את הטקסטורות. לא ניתן לשלב עם `texture_prompt` או `style_image`. (ברירת מחדל: "none") | DYNAMIC_COMBO | לא | "none"<br>"image"<br>"multiview" |
 | `part_names` | שמות חלקים מופרדים בפסיקים מ-Tripo: Segment Model שעבורם יש ליצור טקסטורות. ערך ריק מחיל טקסטורות על כל חלק. (ברירת מחדל: ריק) קלט מתקדם. | STRING | לא | - |

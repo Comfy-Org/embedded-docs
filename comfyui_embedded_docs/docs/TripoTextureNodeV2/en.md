@@ -16,7 +16,7 @@ This node adds textures to an existing 3D model from a Tripo workflow, identifie
 | `texture_quality` | Quality of the generated textures. `detailed` = HD textures, `extreme` = 8K Ultra textures. (default: "standard") Advanced input. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | How the textures are aligned to the model. (default: "original_image") Advanced input. | COMBO | No | "original_image"<br>"geometry" |
 | `texture_prompt` | Optional text guidance for texturing. Required in practice for imported models (Tripo: Import Model), which carry no source image to infer colors from. Cannot be combined with reference images. (default: empty) | STRING | No | - |
-| `model_version` | Texture model: v3.0 for meshes generated with v3.x. (default: v3_0_20250812) | COMBO | No | `"v3.0-20250812"` |
+| `model_version` | Texture model: v3.0 for meshes generated with v3.x. (default: v3.0-20250812) | COMBO | No | `"v3.0-20250812"` |
 | `style_image` | Reference image for the artistic style of the textures. Only used together with `texture_prompt`. | IMAGE | No | - |
 | `reference` | Reference images guiding the textures. Cannot be combined with `texture_prompt` or `style_image`. (default: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Comma-separated part names from Tripo: Segment Model to texture. Empty textures every part. (default: empty) Advanced input. | STRING | No | - |

@@ -19,7 +19,7 @@ El nodo Tripo: Texture model (Legacy) añade texturas a un modelo 3D de Tripo ex
 | `calidad_de_textura` | Calidad de resolución de textura: detailed = texturas HD, extreme = texturas 8K Ultra. (predeterminado: "standard"). Costo aproximado: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `alineación_de_textura` | Método utilizado para alinear las texturas generadas con el modelo. (predeterminado: "original_image") | COMBO | No | "original_image"<br>"geometry" |
 | `texture_prompt` | Guía de texto opcional para el texturizado. Obligatorio en la práctica para modelos importados (Tripo: Import Model), que no llevan una imagen de origen de la que inferir colores. No se puede combinar con imágenes de referencia. (predeterminado: "") | STRING | No | - |
-| `model_version` | Modelo de texturizado: v3.0 para mallas generadas con v3.x. (predeterminado: v3.0_20250812) | COMBO | No | `"v3.0-20250812"` |
+| `model_version` | Modelo de texturizado: v3.0 para mallas generadas con v3.x. (predeterminado: v3.0-20250812) | COMBO | No | `"v3.0-20250812"` |
 | `style_image` | Imagen de referencia para el estilo artístico de las texturas. Solo se utiliza junto con `texture_prompt`. | IMAGE | No | - |
 | `referencia` | Imágenes de referencia que guían las texturas. No se pueden combinar con `texture_prompt` ni con `style_image`. (predeterminado: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nombres de partes separados por comas provenientes de Tripo: Segment Model que se van a texturizar. Si está vacío, texturiza cada parte. (predeterminado: "") | STRING | No | - |
