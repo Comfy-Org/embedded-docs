@@ -18,7 +18,7 @@
 | `texture_seed` | 紋理生成的隨機種子（預設：42）。 | INT | 否 | 0 到 2,147,483,647 |
 | `texture_quality` | 紋理生成的品質等級（預設：`"standard"`）。`"detailed"` = HD 紋理，`"extreme"` = 8K Ultra 紋理。 | COMBO | 否 | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `texture_alignment` | 用於將紋理對齊到模型的方法（預設：`"original_image"`）。 | COMBO | 否 | `"original_image"`<br>`"geometry"` |
-| `face_limit` | 最大面數。-1 會讓 Tripo 自適應選擇（在 v3.x standard 上約 1.4M 面，detailed 約 2M）。Tripo 會默默限制：v2.5 為 500,000，四邊形網格為 150,000。（預設：-1） | INT | 否 | -1 到 2,000,000 |
+| `face_limit` | 最大面數。-1 會讓 Tripo 自適應選擇（在 v3.x standard 上約 1.4M 面，detailed 約 2M）。Tripo 會默默限制：四邊形網格為 150,000。（預設：-1） | INT | 否 | -1 到 2,000,000 |
 | `quad` | 四邊形網格輸出。Tripo 以 FBX 格式提供四邊形網格，因此結果會出現在 FBX 輸出，而 GLB 輸出會保持為空。（預設：False） | BOOLEAN | 否 | - |
 | `幾何品質` | 幾何生成的品質等級（預設：`"standard"`）。 | COMBO | 否 | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | 低多邊形網格，具有乾淨、手工風格的拓撲（500-20,000 面，四邊形 500-10,000）。最適合簡單主體；複雜主體可能會失敗。（預設：False） | BOOLEAN | 否 | - |

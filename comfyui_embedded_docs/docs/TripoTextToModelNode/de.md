@@ -16,7 +16,7 @@ Dieser Legacy-Node generiert fertige 3D-Modelle aus einer Textbeschreibung mithi
 | `model_seed` | Seed für die Modellgenerierungsphase (Standard: 42). | INT | Nein | 0 bis 2147483647 |
 | `texture_seed` | Seed für die Texturgenerierungsphase (Standard: 42). | INT | Nein | 0 bis 2147483647 |
 | `texture_quality` | Qualität der generierten Texturen. detailed = HD-Texturen, extreme = 8K-Ultra-Texturen (Standard: standard). | COMBO | Nein | "standard"<br>"detailed"<br>"extreme" |
-| `face_limit` | Maximale Face-Anzahl. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Flächen bei v3.x standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: v2.5 bei 500.000, Quad-Meshes bei 150.000. (Standard: -1) | INT | Nein | -1 bis 2000000 |
+| `face_limit` | Maximale Face-Anzahl. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Flächen bei v3.x standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: Quad-Meshes bei 150.000. (Standard: -1) | INT | Nein | -1 bis 2000000 |
 | `quad` | Quad-Mesh-Ausgabe. Tripo liefert Quad-Meshes als FBX, daher wird das Ergebnis über die FBX-Ausgabe geliefert und die GLB-Ausgabe bleibt leer. (Standard: False) | BOOLEAN | Nein | true / false |
 | `geometry_quality` | Qualität der generierten Geometrie (Standard: standard). | COMBO | Nein | "standard"<br>"detailed" |
 | `smart_low_poly` | Low-Poly-Mesh mit sauberer, handgefertigt anmutender Topologie (500-20.000 Flächen, Quad 500-10.000). Am besten für einfache Motive geeignet; komplexe können fehlschlagen. (Standard: False) | BOOLEAN | Nein | true / false |

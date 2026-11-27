@@ -7,7 +7,7 @@ Genera modelos 3D de forma síncrona a partir de una sola imagen usando la API d
 | Parámetro | Descripción | Tipo de datos | Requerido | Rango |
 |-----------|-------------|-----------|----------|-------|
 | `imagen` | La imagen de entrada utilizada para generar el modelo 3D. Se debe proporcionar una imagen; de lo contrario, el nodo lanza un error. | IMAGE | Sí | - |
-| `versión_modelo` | La versión del modelo que se usará para la generación. | COMBO | No | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` |
+| `versión_modelo` | La versión del modelo que se usará para la generación. | COMBO | No | `"v3.1-20260211"`<br>`"v3.0-20250812"` |
 | `estilo` | Ya no es compatible con Tripo y se ignora. Se conserva para flujos de trabajo anteriores. (predeterminado: `"None"`) | COMBO | No | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` |
 | `textura` | Genera mapas de textura. Desactivado devuelve geometría sin texturas e ignora `pbr`. (predeterminado: True) | BOOLEAN | No | True<br>False |
 | `pbr` | Mapas de material PBR (color base, metálico, rugosidad, normal). Requiere `texture`. (predeterminado: True) | BOOLEAN | No | True<br>False |
@@ -16,7 +16,7 @@ Genera modelos 3D de forma síncrona a partir de una sola imagen usando la API d
 | `semilla_textura` | Semilla aleatoria para la generación de texturas. (predeterminado: 42) | INT | No | 0 a 2147483647 |
 | `calidad_textura` | Nivel de calidad para la generación de texturas: `detailed` = texturas HD, `extreme` = texturas Ultra 8K. (predeterminado: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `alineación_de_textura` | Método de alineación para el mapeo de texturas. (predeterminado: `"original_image"`) | COMBO | No | `"original_image"`<br>`"geometry"` |
-| `límite_de_caras` | Cantidad máxima de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1,4M de caras en v3.x estándar, 2M en detallado). Tripo aplica límites silenciosamente: v2.5 a 500.000, mallas de cuadriláteros a 150.000. (predeterminado: -1) | INT | No | -1 a 2000000 |
+| `límite_de_caras` | Cantidad máxima de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1,4M de caras en v3.x estándar, 2M en detallado). Tripo aplica límites silenciosamente: mallas de cuadriláteros a 150.000. (predeterminado: -1) | INT | No | -1 a 2000000 |
 | `cuadrilátero` | Salida de malla de cuadriláteros. Tripo entrega las mallas de cuadriláteros como FBX, por lo que el resultado llega en la salida FBX y la salida GLB permanece vacía. (predeterminado: False) | BOOLEAN | No | True<br>False |
 | `calidad_de_geometría` | Nivel de calidad para la generación de geometría. (predeterminado: `"standard"`) | COMBO | No | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Malla de bajo poligonaje con topología limpia de estilo artesanal (500-20.000 caras, cuadriláteros 500-10.000). Mejor para sujetos simples; los complejos pueden fallar. (predeterminado: False) | BOOLEAN | No | True<br>False |

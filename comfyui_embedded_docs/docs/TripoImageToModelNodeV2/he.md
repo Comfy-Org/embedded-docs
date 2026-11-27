@@ -15,7 +15,7 @@
 | `texture_seed` | ערך Seed המשמש לשלב יצירת הטקסטורה (ברירת מחדל: 42). | INT | לא | 0 עד 2147483647 |
 | `texture_quality` | detailed = טקסטורות HD, extreme = טקסטורות 8K Ultra (ברירת מחדל: "standard"). | COMBO | לא | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | כיצד הטקסטורות מיושרות על הגאומטריה שנוצרה (ברירת מחדל: "original_image"). | COMBO | לא | "original_image"<br>"geometry" |
-| `face_limit` | מספר הפאות המקסימלי. -1 מאפשר ל-Tripo לבחור באופן אדפטיבי (כ-1.4M פאות ב-v3.x standard, 2M ב-detailed). Tripo מגביל בשקט: v2.5 ב-500,000, רשתות quad ב-150,000 (ברירת מחדל: -1). | INT | לא | -1 עד 2000000 |
+| `face_limit` | מספר הפאות המקסימלי. -1 מאפשר ל-Tripo לבחור באופן אדפטיבי (כ-1.4M פאות ב-v3.x standard, 2M ב-detailed). Tripo מגביל בשקט: רשתות quad ב-150,000 (ברירת מחדל: -1). | INT | לא | -1 עד 2000000 |
 | `quad` | פלט רשת quad. Tripo מספק רשתות quad כ-FBX, כך שהתוצאה מגיעה לפלט FBX ופלט GLB נשאר ריק (ברירת מחדל: false). | BOOLEAN | לא | true<br>false |
 | `geometry_quality` | רמת האיכות של הגאומטריה שנוצרה (ברירת מחדל: "standard"). | COMBO | לא | "standard"<br>"detailed" |
 | `smart_low_poly` | רשת low-poly עם טופולוגיה נקייה בסגנון עבודת יד (500-20,000 פאות, quad 500-10,000). מתאים ביותר לאובייקטים פשוטים; אובייקטים מורכבים עלולים להיכשל (ברירת מחדל: false). | BOOLEAN | לא | true<br>false |

@@ -16,7 +16,7 @@ Dieser Node fügt einem vorhandenen 3D-Modell aus einem Tripo-Workflow Texturen 
 | `texture_quality` | Qualität der generierten Texturen. `detailed` = HD-Texturen, `extreme` = 8K-Ultra-Texturen. (Standard: "standard") Erweiterte Eingabe. | COMBO | Nein | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Wie die Texturen am Modell ausgerichtet werden. (Standard: "original_image") Erweiterte Eingabe. | COMBO | Nein | "original_image"<br>"geometry" |
 | `texture_prompt` | Optionale Textanleitung für die Texturierung. In der Praxis erforderlich für importierte Modelle (Tripo: Import Model), die kein Quellbild besitzen, aus dem Farben abgeleitet werden können. Kann nicht mit Referenzbildern kombiniert werden. (Standard: leer) | STRING | Nein | - |
-| `model_version` | Texturmodell: v3.0 für Meshes, die mit v3.x generiert wurden, v2.5 für Meshes, die mit v2.5 generiert wurden. (Standard: v3_0_20250812) | COMBO | Nein | Tripo-Texturmodellversionen, Standard "v3_0_20250812" |
+| `model_version` | Texturmodell: v3.0 für Meshes, die mit v3.x generiert wurden. (Standard: v3.0-20250812) | COMBO | Nein | `"v3.0-20250812"` |
 | `style_image` | Referenzbild für den künstlerischen Stil der Texturen. Wird nur zusammen mit `texture_prompt` verwendet. | IMAGE | Nein | - |
 | `reference` | Referenzbilder, die die Texturen lenken. Kann nicht mit `texture_prompt` oder `style_image` kombiniert werden. (Standard: "none") | DYNAMIC_COMBO | Nein | "none"<br>"image"<br>"multiview" |
 | `part_names` | Kommagetrennte Teilnamen aus „Tripo: Segment Model“, die texturiert werden sollen. Leer texturiert jeden Teil. (Standard: leer) Erweiterte Eingabe. | STRING | Nein | - |

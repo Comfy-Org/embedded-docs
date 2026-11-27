@@ -19,7 +19,7 @@ Le nœud Tripo: Texture model (Legacy) ajoute des textures à un modèle 3D Trip
 | `qualité_texture` | Qualité de résolution des textures : detailed = textures HD, extreme = textures 8K Ultra. (par défaut : "standard"). Coût approximatif : standard $0.10, detailed $0.20, extreme $0.30. | COMBO | Non | "standard"<br>"detailed"<br>"extreme" |
 | `alignement_texture` | Méthode utilisée pour aligner les textures générées sur le modèle. (par défaut : "original_image") | COMBO | Non | "original_image"<br>"geometry" |
 | `texture_prompt` | Consigne textuelle facultative pour la texturation. En pratique, requis pour les modèles importés (Tripo: Import Model), qui ne comportent aucune image source à partir de laquelle déduire les couleurs. Ne peut pas être combiné avec des images de référence. (par défaut : "") | STRING | Non | - |
-| `model_version` | Modèle de texture : v3.0 pour les maillages générés avec v3.x, v2.5 pour les maillages générés avec v2.5. (par défaut : v3.0_20250812) | COMBO | Non | Plusieurs options disponibles |
+| `model_version` | Modèle de texture : v3.0 pour les maillages générés avec v3.x. (par défaut : v3.0-20250812) | COMBO | Non | `"v3.0-20250812"` |
 | `style_image` | Image de référence pour le style artistique des textures. Utilisée uniquement avec `texture_prompt`. | IMAGE | Non | - |
 | `reference` | Images de référence guidant les textures. Ne peut pas être combiné avec `texture_prompt` ou `style_image`. (par défaut : "none") | DYNAMIC_COMBO | Non | "none"<br>"image"<br>"multiview" |
 | `part_names` | Noms de parties séparés par des virgules provenant de Tripo: Segment Model à texturer. Une valeur vide texture toutes les parties. (par défaut : "") | STRING | Non | - |

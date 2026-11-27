@@ -16,7 +16,7 @@
 | `模型种子` | 用于模型生成阶段的种子（默认：42）。 | INT | 否 | 0 到 2147483647 |
 | `纹理种子` | 用于纹理生成阶段的种子（默认：42）。 | INT | 否 | 0 到 2147483647 |
 | `纹理质量` | 生成纹理的质量。detailed = HD 纹理，extreme = 8K Ultra 纹理（默认：standard）。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
-| `面数限制` | 最大面数。-1 让 Tripo 自适应选择（在 v3.x standard 下约 140 万面，在 detailed 下约 200 万面）。Tripo 会静默限制：v2.5 为 500,000，四边形网格为 150,000。（默认：-1） | INT | 否 | -1 到 2000000 |
+| `面数限制` | 最大面数。-1 让 Tripo 自适应选择（在 v3.x standard 下约 140 万面，在 detailed 下约 200 万面）。Tripo 会静默限制：四边形网格为 150,000。（默认：-1） | INT | 否 | -1 到 2000000 |
 | `四边形` | 四边形网格输出。Tripo 以 FBX 格式交付四边形网格，因此结果会出现在 FBX 输出上，而 GLB 输出保持为空。（默认：False） | BOOLEAN | 否 | true / false |
 | `几何质量` | 生成几何体的质量（默认：standard）。 | COMBO | 否 | "standard"<br>"detailed" |
 | `smart_low_poly` | 具有干净、手工风格拓扑的低多边形网格（500-20,000 个面，quad 为 500-10,000）。最适合简单主体；复杂主体可能会失败。（默认：False） | BOOLEAN | 否 | true / false |

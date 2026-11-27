@@ -16,7 +16,7 @@ Questo nodo aggiunge texture a un modello 3D esistente di un flusso di lavoro Tr
 | `texture_quality` | Qualità delle texture generate. `detailed` = texture HD, `extreme` = texture 8K Ultra. (predefinito: "standard") Input avanzato. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Modalità di allineamento delle texture al modello. (predefinito: "original_image") Input avanzato. | COMBO | No | "original_image"<br>"geometry" |
 | `texture_prompt` | Guida testuale opzionale per la texturizzazione. In pratica richiesto per i modelli importati (Tripo: Import Model), che non hanno un'immagine sorgente da cui dedurre i colori. Non può essere combinato con immagini di riferimento. (predefinito: vuoto) | STRING | No | - |
-| `model_version` | Modello texture: v3.0 per mesh generate con v3.x, v2.5 per mesh generate con v2.5. (predefinito: v3_0_20250812) | COMBO | No | Versioni del modello texture Tripo, predefinito "v3_0_20250812" |
+| `model_version` | Modello texture: v3.0 per mesh generate con v3.x. (predefinito: v3.0-20250812) | COMBO | No | `"v3.0-20250812"` |
 | `style_image` | Immagine di riferimento per lo stile artistico delle texture. Usata solo insieme a `texture_prompt`. | IMAGE | No | - |
 | `reference` | Immagini di riferimento che guidano le texture. Non possono essere combinate con `texture_prompt` o `style_image`. (predefinito: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nomi delle parti separati da virgola da Tripo: Segment Model da texturizzare. Se vuoto, applica la texture a ogni parte. (predefinito: vuoto) Input avanzato. | STRING | No | - |

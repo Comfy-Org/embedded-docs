@@ -19,7 +19,7 @@ Tripo: Texture model (Legacy) 节点通过 Tripo API 为现有的 Tripo 3D 模�
 | `纹理质量` | 纹理分辨率质量：detailed = HD 纹理，extreme = 8K Ultra 纹理。（默认："standard"）。大致费用：standard $0.10，detailed $0.20，extreme $0.30。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
 | `纹理对齐` | 用于将生成的纹理对齐到模型的方法。（默认："original_image"） | COMBO | 否 | "original_image"<br>"geometry" |
 | `texture_prompt` | 用于纹理生成的可选文本引导。对于导入的模型（Tripo: Import Model）实际上必需，因为这些模型没有可用于推断颜色的源图像。不能与参考图像组合使用。（默认：""） | STRING | 否 | - |
-| `model_version` | 纹理模型：v3.0 用于使用 v3.x 生成的网格，v2.5 用于使用 v2.5 生成的网格。（默认：v3.0_20250812） | COMBO | 否 | 提供多个选项 |
+| `model_version` | 纹理模型：v3.0 用于使用 v3.x 生成的网格。（默认：v3.0-20250812） | COMBO | 否 | `"v3.0-20250812"` |
 | `style_image` | 用于纹理艺术风格的参考图像。仅与 `texture_prompt` 一起使用。 | IMAGE | 否 | - |
 | `reference` | 用于引导纹理的参考图像。不能与 `texture_prompt` 或 `style_image` 组合使用。（默认："none"） | DYNAMIC_COMBO | 否 | "none"<br>"image"<br>"multiview" |
 | `part_names` | 来自 Tripo: Segment Model 的逗号分隔部件名称，用于指定要纹理化的部件。留空则为每个部件生成纹理。（默认：""） | STRING | 否 | - |

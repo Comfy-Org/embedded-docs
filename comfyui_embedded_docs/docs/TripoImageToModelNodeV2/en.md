@@ -15,7 +15,7 @@ The Tripo: Image to Model node turns a single reference image into a 3D model us
 | `texture_seed` | Seed used for the texture generation step (default: 42). | INT | No | 0 to 2147483647 |
 | `texture_quality` | detailed = HD textures, extreme = 8K Ultra textures (default: "standard"). | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | How textures are aligned on the generated geometry (default: "original_image"). | COMBO | No | "original_image"<br>"geometry" |
-| `face_limit` | Maximum face count. -1 lets Tripo pick adaptively (about 1.4M faces on v3.x standard, 2M on detailed). Tripo clamps silently: v2.5 at 500,000, quad meshes at 150,000 (default: -1). | INT | No | -1 to 2000000 |
+| `face_limit` | Maximum face count. -1 lets Tripo pick adaptively (about 1.4M faces on v3.x standard, 2M on detailed). Tripo clamps silently: quad meshes at 150,000 (default: -1). | INT | No | -1 to 2000000 |
 | `quad` | Quad mesh output. Tripo delivers quad meshes as FBX, so the result arrives on the FBX output and the GLB output stays empty (default: false). | BOOLEAN | No | true<br>false |
 | `geometry_quality` | The quality level of the generated geometry (default: "standard"). | COMBO | No | "standard"<br>"detailed" |
 | `smart_low_poly` | Low-poly mesh with clean, hand-crafted style topology (500-20,000 faces, quad 500-10,000). Best for simple subjects; complex ones may fail (default: false). | BOOLEAN | No | true<br>false |

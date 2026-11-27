@@ -15,7 +15,7 @@ Generates a 3D model from a text description using the Tripo service. The node s
 | `model_seed` | Model üretimi için seed değeri (varsayılan: 42). | INT | Hayır | 0 - 2147483647 |
 | `texture_seed` | Doku üretimi için seed değeri (varsayılan: 42). | INT | Hayır | 0 - 2147483647 |
 | `texture_quality` | Doku ayrıntı düzeyi (varsayılan: "standard"). "detailed" = HD dokular, "extreme" = 8K Ultra dokular. | COMBO | Hayır | `"standard"`<br>`"detailed"`<br>`"extreme"` |
-| `face_limit` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4M yüz, detailed'da 2M). Tripo sessizce sınırlar: v2.5'te 500.000, quad ağlarda 150.000 (varsayılan: -1). | INT | Hayır | -1 - 2000000 |
+| `face_limit` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4M yüz, detailed'da 2M). Tripo sessizce sınırlar: quad ağlarda 150.000 (varsayılan: -1). | INT | Hayır | -1 - 2000000 |
 | `quad` | Quad ağ çıktısı. Tripo quad ağları FBX olarak teslim eder, bu nedenle sonuç FBX çıktısına gelir ve GLB çıktısı boş kalır (varsayılan: False). | BOOLEAN | Hayır | True<br>False |
 | `geometry_quality` | Geometri ayrıntı düzeyi (varsayılan: "standard"). | COMBO | Hayır | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Temiz, el yapımı tarzı topolojiye sahip düşük poligonlu ağ (500-20.000 yüz, quad 500-10.000). Basit konular için en iyisidir; karmaşık olanlar başarısız olabilir (varsayılan: False). | BOOLEAN | Hayır | True<br>False |

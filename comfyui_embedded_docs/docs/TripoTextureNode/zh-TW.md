@@ -19,7 +19,7 @@ Tripo: Texture model (Legacy) 節點會透過 Tripo API 為現有的 Tripo 3D �
 | `紋理品質` | 紋理解析度品質：detailed = HD 紋理，extreme = 8K Ultra 紋理。（預設："standard"）。預估費用：standard $0.10、detailed $0.20、extreme $0.30。 | COMBO | 否 | "standard"<br>"detailed"<br>"extreme" |
 | `紋理對齊` | 用於將產生的紋理對齊至模型的方法。（預設："original_image"） | COMBO | 否 | "original_image"<br>"geometry" |
 | `texture_prompt` | 選用的紋理文字引導。實務上，對於匯入模型（Tripo: Import Model）為必填，因為這些模型沒有可用來推斷顏色的來源影像。不可與參考影像合併使用。（預設：""） | STRING | 否 | - |
-| `model_version` | 紋理模型：v3.0 用於以 v3.x 產生的網格，v2.5 用於以 v2.5 產生的網格。（預設：v3.0_20250812） | COMBO | 否 | 有多個可用選項 |
+| `model_version` | 紋理模型：v3.0 用於以 v3.x 產生的網格。（預設：v3.0-20250812） | COMBO | 否 | `"v3.0-20250812"` |
 | `style_image` | 紋理藝術風格的參考影像。僅可與 `texture_prompt` 搭配使用。 | IMAGE | 否 | - |
 | `參考` | 引導紋理的參考影像。不可與 `texture_prompt` 或 `style_image` 合併使用。（預設："none"） | DYNAMIC_COMBO | 否 | "none"<br>"image"<br>"multiview" |
 | `part_names` | 以逗號分隔的部件名稱，來自 Tripo: Segment Model，用於指定要產生紋理的部件。留空時會為每個部件產生紋理。（預設：""） | STRING | 否 | - |

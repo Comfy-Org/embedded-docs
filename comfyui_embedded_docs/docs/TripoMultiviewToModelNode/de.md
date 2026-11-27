@@ -18,7 +18,7 @@ Dieser Node generiert 3D-Modelle synchron mithilfe der Tripo-API, indem er bis z
 | `texture_seed` | Zufälliger Seed für die Texturgenerierung (Standard: 42). | INT | Nein | 0 bis 2,147,483,647 |
 | `texture_quality` | Qualitätsstufe für die Texturgenerierung (Standard: `"standard"`). `"detailed"` = HD-Texturen, `"extreme"` = 8K-Ultra-Texturen. | COMBO | Nein | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `texture_alignment` | Methode zur Ausrichtung der Texturen am Modell (Standard: `"original_image"`). | COMBO | Nein | `"original_image"`<br>`"geometry"` |
-| `face_limit` | Maximale Anzahl an Flächen. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Flächen bei v3.x-Standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: v2.5 bei 500.000, Quad-Meshes bei 150.000. (Standard: -1) | INT | Nein | -1 bis 2,000,000 |
+| `face_limit` | Maximale Anzahl an Flächen. -1 lässt Tripo adaptiv wählen (etwa 1,4 Mio. Flächen bei v3.x-Standard, 2 Mio. bei detailed). Tripo begrenzt stillschweigend: Quad-Meshes bei 150.000. (Standard: -1) | INT | Nein | -1 bis 2,000,000 |
 | `quad` | Quad-Mesh-Ausgabe. Tripo liefert Quad-Meshes als FBX, sodass das Ergebnis am FBX-Ausgang ankommt und der GLB-Ausgang leer bleibt. (Standard: False) | BOOLEAN | Nein | - |
 | `geometry_quality` | Qualitätsstufe für die Geometriegenerierung (Standard: `"standard"`). | COMBO | Nein | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Low-Poly-Mesh mit sauberer Topologie im handgefertigten Stil (500–20.000 Flächen, Quad 500–10.000). Am besten für einfache Motive geeignet; komplexe können fehlschlagen. (Standard: False) | BOOLEAN | Nein | - |

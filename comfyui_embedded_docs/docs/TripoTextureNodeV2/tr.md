@@ -16,7 +16,7 @@ Bu düğüm, Tripo iş akışındaki mevcut bir 3B modele, önceki bir oluşturm
 | `texture_quality` | Üretilen dokuların kalitesi. `detailed` = HD dokular, `extreme` = 8K Ultra dokular. (varsayılan: "standard") Gelişmiş girdi. | COMBO | Hayır | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Dokuların modele nasıl hizalandığı. (varsayılan: "original_image") Gelişmiş girdi. | COMBO | Hayır | "original_image"<br>"geometry" |
 | `texture_prompt` | Dokulama için isteğe bağlı metin yönlendirmesi. Renklerin çıkarılacağı bir kaynak görüntü taşımayan içe aktarılmış modeller (Tripo: Import Model) için pratikte gereklidir. Referans görsellerle birlikte kullanılamaz. (varsayılan: boş) | STRING | Hayır | - |
-| `model_version` | Doku modeli: v3.x ile üretilen mesh'ler için v3.0, v2.5 ile üretilen mesh'ler için v2.5. (varsayılan: v3_0_20250812) | COMBO | Hayır | Tripo doku modeli sürümleri, varsayılan "v3_0_20250812" |
+| `model_version` | Doku modeli: v3.x ile üretilen mesh'ler için v3.0 kullanılır. (varsayılan: v3.0-20250812) | COMBO | Hayır | `"v3.0-20250812"` |
 | `style_image` | Dokuların sanatsal stili için referans görsel. Yalnızca `texture_prompt` ile birlikte kullanılır. | IMAGE | Hayır | - |
 | `reference` | Dokuları yönlendiren referans görseller. `texture_prompt` veya `style_image` ile birlikte kullanılamaz. (varsayılan: "none") | DYNAMIC_COMBO | Hayır | "none"<br>"image"<br>"multiview" |
 | `part_names` | Tripo: Segment Model'den doku uygulanacak virgülle ayrılmış parça adları. Boş bırakılırsa her parçaya doku uygular. (varsayılan: boş) Gelişmiş girdi. | STRING | Hayır | - |

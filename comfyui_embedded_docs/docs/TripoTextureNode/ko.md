@@ -17,7 +17,7 @@ Tripo: Texture model (Legacy) 노드는 Tripo API를 통해 기존 Tripo 3D 모�
 | `텍스처 품질` | 텍스처 해상도 품질입니다. detailed = HD 텍스처, extreme = 8K Ultra 텍스처입니다. (기본값: "standard"). 대략적인 비용: standard $0.10, detailed $0.20, extreme $0.30. | COMBO | 아니요 | "standard"<br>"detailed"<br>"extreme" |
 | `텍스처 정렬` | 생성된 텍스처를 모델에 정렬하는 데 사용하는 방법입니다. (기본값: "original_image") | COMBO | 아니요 | "original_image"<br>"geometry" |
 | `texture_prompt` | 텍스처링을 위한 선택적 텍스트 안내입니다. 색상을 추론할 원본 이미지가 없는 가져온 모델(Tripo: Import Model)에서는 실제로 필수입니다. 참조 이미지와 함께 사용할 수 없습니다. (기본값: "") | STRING | 아니요 | - |
-| `model_version` | 텍스처 모델입니다. v3.x로 생성된 메시에는 v3.0을, v2.5로 생성된 메시에는 v2.5를 사용합니다. (기본값: v3.0_20250812) | COMBO | 아니요 | 여러 옵션 사용 가능 |
+| `model_version` | 텍스처 모델입니다. v3.x로 생성된 메시에는 v3.0을 사용합니다. (기본값: v3.0-20250812) | COMBO | 아니요 | `"v3.0-20250812"` |
 | `style_image` | 텍스처의 예술적 스타일을 위한 참조 이미지입니다. `texture_prompt`와 함께 사용할 때만 적용됩니다. | IMAGE | 아니요 | - |
 | `reference` | 텍스처를 안내하는 참조 이미지입니다. `texture_prompt` 또는 `style_image`와 함께 사용할 수 없습니다. (기본값: "none") | DYNAMIC_COMBO | 아니요 | "none"<br>"image"<br>"multiview" |
 | `part_names` | 텍스처링할 Tripo: Segment Model의 파트 이름을 쉼표로 구분한 목록입니다. 비워 두면 모든 파트에 텍스처를 적용합니다. (기본값: "") | STRING | 아니요 | - |

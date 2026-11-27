@@ -15,7 +15,7 @@ Tripo: Image to Model düğümü, tek bir referans görüntüyü Tripo'nun görs
 | `texture_seed` | Doku üretim adımında kullanılan seed (varsayılan: 42). | INT | Hayır | 0 ile 2147483647 arası |
 | `texture_quality` | detailed = HD dokular, extreme = 8K Ultra dokular (varsayılan: "standard"). | COMBO | Hayır | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Dokuların üretilen geometri üzerinde nasıl hizalandığı (varsayılan: "original_image"). | COMBO | Hayır | "original_image"<br>"geometry" |
-| `face_limit` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4M yüz, detailed modunda 2M). Tripo sessizce sınırlar: v2.5 için 500.000, quad mesh'ler için 150.000 (varsayılan: -1). | INT | Hayır | -1 ile 2000000 arası |
+| `face_limit` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4M yüz, detailed modunda 2M). Tripo sessizce sınırlar: quad mesh'ler için 150.000 (varsayılan: -1). | INT | Hayır | -1 ile 2000000 arası |
 | `quad` | Quad mesh çıktısı. Tripo, quad mesh'leri FBX olarak teslim eder; bu nedenle sonuç FBX çıktısına gelir ve GLB çıktısı boş kalır (varsayılan: false). | BOOLEAN | Hayır | true<br>false |
 | `geometry_quality` | Üretilen geometrinin kalite düzeyi (varsayılan: "standard"). | COMBO | Hayır | "standard"<br>"detailed" |
 | `smart_low_poly` | Temiz, el yapımı tarzda topolojiye sahip düşük poligonlu mesh (500-20.000 yüz, quad 500-10.000). Basit nesneler için en iyisidir; karmaşık olanlar başarısız olabilir (varsayılan: false). | BOOLEAN | Hayır | true<br>false |

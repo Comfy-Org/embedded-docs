@@ -18,7 +18,7 @@ Bu düğüm, bir nesnenin farklı görünümlerini (ön, sol, arka, sağ) göste
 | `doku_tohumu` | Doku üretimi için rastgele tohum (varsayılan: 42). | INT | Hayır | 0 ile 2.147.483.647 |
 | `doku_kalitesi` | Doku üretimi için kalite düzeyi (varsayılan: `"standard"`). `"detailed"` = HD dokular, `"extreme"` = 8K Ultra dokular. | COMBO | Hayır | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `doku_hizalama` | Dokuları modele hizalamak için kullanılan yöntem (varsayılan: `"original_image"`). | COMBO | Hayır | `"original_image"`<br>`"geometry"` |
-| `yüz_sınırı` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4M yüz, `detailed` seçeneğinde 2M). Tripo sessizce sınırlar: v2.5'te 500.000, quad ağlarda 150.000. (varsayılan: -1) | INT | Hayır | -1 ile 2.000.000 |
+| `yüz_sınırı` | Maksimum yüz sayısı. -1, Tripo'nun uyarlamalı seçim yapmasını sağlar (v3.x standardında yaklaşık 1,4M yüz, `detailed` seçeneğinde 2M). Tripo sessizce sınırlar: quad ağlarda 150.000. (varsayılan: -1) | INT | Hayır | -1 ile 2.000.000 |
 | `dörtgen` | Quad ağ çıktısı. Tripo, quad ağları FBX olarak teslim eder; bu nedenle sonuç FBX çıktısına gelir ve GLB çıktısı boş kalır. (varsayılan: False) | BOOLEAN | Hayır | - |
 | `geometry_quality` | Geometri üretimi için kalite düzeyi (varsayılan: `"standard"`). | COMBO | Hayır | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Temiz, el yapımı tarzda topolojiye sahip düşük poligonlu ağ (500-20.000 yüz, quad 500-10.000). Basit nesneler için en iyisidir; karmaşık olanlar başarısız olabilir. (varsayılan: False) | BOOLEAN | Hayır | - |

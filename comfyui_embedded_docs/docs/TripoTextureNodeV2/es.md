@@ -16,7 +16,7 @@ Este nodo agrega texturas a un modelo 3D existente de un flujo de trabajo de Tri
 | `texture_quality` | Calidad de las texturas generadas. `detailed` = texturas HD, `extreme` = texturas Ultra 8K. (predeterminado: "standard") Entrada avanzada. | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Cómo se alinean las texturas con el modelo. (predeterminado: "original_image") Entrada avanzada. | COMBO | No | "original_image"<br>"geometry" |
 | `texture_prompt` | Guía de texto opcional para el texturizado. En la práctica, es obligatoria para modelos importados (Tripo: Import Model), que no llevan una imagen de origen de la cual inferir colores. No se puede combinar con imágenes de referencia. (predeterminado: vacío) | STRING | No | - |
-| `model_version` | Modelo de texturizado: v3.0 para mallas generadas con v3.x, v2.5 para mallas generadas con v2.5. (predeterminado: v3_0_20250812) | COMBO | No | Versiones del modelo de texturizado de Tripo, predeterminado "v3_0_20250812" |
+| `model_version` | Modelo de texturizado: v3.0 para mallas generadas con v3.x. (predeterminado: v3.0-20250812) | COMBO | No | `"v3.0-20250812"` |
 | `style_image` | Imagen de referencia para el estilo artístico de las texturas. Solo se usa junto con `texture_prompt`. | IMAGE | No | - |
 | `reference` | Imágenes de referencia que guían las texturas. No se puede combinar con `texture_prompt` ni `style_image`. (predeterminado: "none") | DYNAMIC_COMBO | No | "none"<br>"image"<br>"multiview" |
 | `part_names` | Nombres de partes separados por comas de Tripo: Segment Model para texturizar. Si está vacío, texturiza todas las partes. (predeterminado: vacío) Entrada avanzada. | STRING | No | - |

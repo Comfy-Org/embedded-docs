@@ -15,7 +15,7 @@ El nodo Tripo: Image to Model convierte una única imagen de referencia en un mo
 | `texture_seed` | Semilla utilizada para el paso de generación de texturas (predeterminado: 42). | INT | No | 0 a 2147483647 |
 | `texture_quality` | detailed = texturas HD, extreme = texturas Ultra 8K (predeterminado: "standard"). | COMBO | No | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | Cómo se alinean las texturas sobre la geometría generada (predeterminado: "original_image"). | COMBO | No | "original_image"<br>"geometry" |
-| `face_limit` | Número máximo de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4M de caras en v3.x estándar, 2M en detailed). Tripo aplica límites silenciosamente: v2.5 a 500,000, mallas quad a 150,000 (predeterminado: -1). | INT | No | -1 a 2000000 |
+| `face_limit` | Número máximo de caras. -1 permite que Tripo elija de forma adaptativa (aproximadamente 1.4M de caras en v3.x estándar, 2M en detailed). Tripo aplica límites silenciosamente: mallas quad a 150,000 (predeterminado: -1). | INT | No | -1 a 2000000 |
 | `quad` | Salida de malla quad. Tripo entrega las mallas quad como FBX, por lo que el resultado llega por la salida FBX y la salida GLB permanece vacía (predeterminado: false). | BOOLEAN | No | true<br>false |
 | `geometry_quality` | El nivel de calidad de la geometría generada (predeterminado: "standard"). | COMBO | No | "standard"<br>"detailed" |
 | `smart_low_poly` | Malla low-poly con topología limpia y de estilo artesanal (500-20,000 caras, quad 500-10,000). Mejor para sujetos simples; los complejos pueden fallar (predeterminado: false). | BOOLEAN | No | true<br>false |

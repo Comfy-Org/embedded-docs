@@ -18,7 +18,7 @@ Este nó gera modelos 3D de forma síncrona usando a API do Tripo, processando a
 | `semente_da_textura` | Semente aleatória para geração de textura (padrão: 42). | INT | Não | 0 a 2,147,483,647 |
 | `qualidade_da_textura` | Nível de qualidade para geração de textura (padrão: `"standard"`). `"detailed"` = texturas HD, `"extreme"` = texturas 8K Ultra. | COMBO | Não | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `alinhamento_da_textura` | Método usado para alinhar texturas ao modelo (padrão: `"original_image"`). | COMBO | Não | `"original_image"`<br>`"geometry"` |
-| `limite_de_faces` | Contagem máxima de faces. -1 permite que o Tripo escolha adaptativamente (cerca de 1,4M de faces no v3.x standard, 2M no detailed). O Tripo limita silenciosamente: v2.5 em 500.000, malhas quad em 150.000. (padrão: -1) | INT | Não | -1 a 2,000,000 |
+| `limite_de_faces` | Contagem máxima de faces. -1 permite que o Tripo escolha adaptativamente (cerca de 1,4M de faces no v3.x standard, 2M no detailed). O Tripo limita silenciosamente: malhas quad em 150.000. (padrão: -1) | INT | Não | -1 a 2,000,000 |
 | `quad` | Saída de malha quad. O Tripo entrega malhas quad como FBX, então o resultado chega na saída FBX e a saída GLB permanece vazia. (padrão: False) | BOOLEAN | Não | - |
 | `qualidade_da_geometria` | Nível de qualidade para geração de geometria (padrão: `"standard"`). | COMBO | Não | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | Malha low-poly com topologia limpa e de estilo artesanal (500-20,000 faces, quad 500-10,000). Melhor para objetos simples; objetos complexos podem falhar. (padrão: False) | BOOLEAN | Não | - |

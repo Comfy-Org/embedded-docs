@@ -18,7 +18,7 @@
 | `texture_seed` | テクスチャ生成用のランダムシード（デフォルト: 42）。 | INT | いいえ | 0～2,147,483,647 |
 | `texture_quality` | テクスチャ生成の品質レベル（デフォルト: `"standard"`）。`"detailed"` = HDテクスチャ、`"extreme"` = 8K Ultraテクスチャ。 | COMBO | いいえ | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `texture_alignment` | テクスチャをモデルに位置合わせするために使用する方法（デフォルト: `"original_image"`）。 | COMBO | いいえ | `"original_image"`<br>`"geometry"` |
-| `face_limit` | 最大面数。-1 で Tripo が適応的に選択します（v3.x standard で約140万面、detailed で200万面）。Tripo は黙ってクランプします：v2.5 では 500,000、クアッドメッシュでは 150,000。（デフォルト: -1） | INT | いいえ | -1～2,000,000 |
+| `face_limit` | 最大面数。-1 で Tripo が適応的に選択します（v3.x standard で約140万面、detailed で200万面）。Tripo は黙ってクランプします：クアッドメッシュでは 150,000。（デフォルト: -1） | INT | いいえ | -1～2,000,000 |
 | `quad` | クアッドメッシュ出力。Tripo はクアッドメッシュを FBX として提供するため、結果は FBX 出力に渡され、GLB 出力は空のままです。（デフォルト: False） | BOOLEAN | いいえ | - |
 | `ジオメトリ品質` | ジオメトリ生成の品質レベル（デフォルト: `"standard"`）。 | COMBO | いいえ | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | クリーンで手作り風のトポロジーを持つ低ポリメッシュ（500～20,000面、クアッドは500～10,000面）。単純な被写体に最適ですが、複雑な被写体では失敗する可能性があります。（デフォルト: False） | BOOLEAN | いいえ | - |

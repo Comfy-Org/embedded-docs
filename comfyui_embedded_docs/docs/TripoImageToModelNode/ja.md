@@ -7,7 +7,7 @@ Tripo の API を使用して、単一の画像から同期的に 3D モデル�
 | パラメータ | 説明 | データ型 | 必須 | 範囲 |
 |-----------|-------------|-----------|----------|-------|
 | `image` | 3D モデルの生成に使用する入力画像です。画像を指定する必要があり、指定しない場合、ノードはエラーを発生させます。 | IMAGE | はい | - |
-| `model_version` | 生成に使用するモデルバージョンです。 | COMBO | いいえ | `"v1.4"`<br>`"v3.0"`<br>`"v3.5"`<br>`"v3.6"` |
+| `model_version` | 生成に使用するモデルバージョンです。 | COMBO | いいえ | `"v3.1-20260211"`<br>`"v3.0-20250812"` |
 | `style` | Tripo では現在サポートされておらず、無視されます。古いワークフロー用に維持されています。（デフォルト: `"None"`） | COMBO | いいえ | `"None"`<br>`"realistic"`<br>`"cartoon"`<br>`"sculpture"`<br>`"low_poly"` |
 | `texture` | テクスチャマップを生成します。オフにすると、ベアジオメトリのみを返し、`pbr` は無視されます。（デフォルト: True） | BOOLEAN | いいえ | True<br>False |
 | `pbr` | PBR マテリアルマップ（ベースカラー、メタリック、ラフネス、ノーマル）です。`texture` が必要です。（デフォルト: True） | BOOLEAN | いいえ | True<br>False |
@@ -16,7 +16,7 @@ Tripo の API を使用して、単一の画像から同期的に 3D モデル�
 | `texture_seed` | テクスチャ生成用のランダムシードです。（デフォルト: 42） | INT | いいえ | 0～2147483647 |
 | `texture_quality` | テクスチャ生成の品質レベルです。`detailed` = HD テクスチャ、`extreme` = 8K Ultra テクスチャ。（デフォルト: `"standard"`） | COMBO | いいえ | `"standard"`<br>`"detailed"`<br>`"extreme"` |
 | `texture_alignment` | テクスチャマッピングの位置合わせ方法です。（デフォルト: `"original_image"`） | COMBO | いいえ | `"original_image"`<br>`"geometry"` |
-| `face_limit` | 最大フェイス数です。-1 にすると Tripo が適応的に選択します（v3.x standard では約 140 万フェイス、detailed では 200 万フェイス）。Tripo は通知なしにクランプします。v2.5 では 500,000、クアッドメッシュでは 150,000 です。（デフォルト: -1） | INT | いいえ | -1～2000000 |
+| `face_limit` | 最大フェイス数です。-1 にすると Tripo が適応的に選択します（v3.x standard では約 140 万フェイス、detailed では 200 万フェイス）。Tripo は通知なしにクランプします。クアッドメッシュでは 150,000 です。（デフォルト: -1） | INT | いいえ | -1～2000000 |
 | `quad` | クアッドメッシュを出力します。Tripo はクアッドメッシュを FBX として提供するため、結果は FBX 出力に渡され、GLB 出力は空のままです。（デフォルト: False） | BOOLEAN | いいえ | True<br>False |
 | `ジオメトリ品質` | ジオメトリ生成の品質レベルです。（デフォルト: `"standard"`） | COMBO | いいえ | `"standard"`<br>`"detailed"` |
 | `smart_low_poly` | クリーンで手作り風のトポロジーを持つローポリメッシュです（500～20,000 フェイス、クアッドでは 500～10,000）。単純な被写体に最適で、複雑なものは失敗する場合があります。（デフォルト: False） | BOOLEAN | いいえ | True<br>False |

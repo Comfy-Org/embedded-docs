@@ -15,7 +15,7 @@ Tripo: Image to Model 노드는 Tripo의 image-to-model 서비스를 사용하�
 | `texture_seed` | 텍스처 생성 단계에 사용되는 시드입니다 (기본값: 42). | INT | 아니요 | 0 ~ 2147483647 |
 | `texture_quality` | detailed = HD 텍스처, extreme = 8K 울트라 텍스처 (기본값: "standard"). | COMBO | 아니요 | "standard"<br>"detailed"<br>"extreme" |
 | `texture_alignment` | 생성된 지오메트리에서 텍스처가 정렬되는 방식입니다 (기본값: "original_image"). | COMBO | 아니요 | "original_image"<br>"geometry" |
-| `face_limit` | 최대 면 수입니다. -1은 Tripo가 적응형으로 선택하도록 합니다(v3.x standard에서 약 140만 면, detailed에서 200만 면). Tripo는 별도 알림 없이 제한합니다: v2.5는 500,000, 쿼드 메시는 150,000입니다 (기본값: -1). | INT | 아니요 | -1 ~ 2000000 |
+| `face_limit` | 최대 면 수입니다. -1은 Tripo가 적응형으로 선택하도록 합니다(v3.x standard에서 약 140만 면, detailed에서 200만 면). Tripo는 별도 알림 없이 제한합니다: 쿼드 메시는 150,000입니다 (기본값: -1). | INT | 아니요 | -1 ~ 2000000 |
 | `quad` | 쿼드 메시 출력입니다. Tripo는 쿼드 메시를 FBX로 전달하므로 결과는 FBX 출력으로 나오고 GLB 출력은 비어 있게 됩니다 (기본값: false). | BOOLEAN | 아니요 | true<br>false |
 | `geometry_quality` | 생성된 지오메트리의 품질 수준입니다 (기본값: "standard"). | COMBO | 아니요 | "standard"<br>"detailed" |
 | `smart_low_poly` | 깔끔한 수작업 스타일 토폴로지를 가진 로우 폴리 메시입니다(500-20,000면, 쿼드 500-10,000). 단순한 대상에 가장 적합하며, 복잡한 대상은 실패할 수 있습니다 (기본값: false). | BOOLEAN | 아니요 | true<br>false |
